@@ -1,0 +1,11 @@
+{
+    "title": "Cloud Labs",
+    "description": "A collection of Workshops for DT Cloud workshops",
+    "logoUrl": "",
+    "tags": ["cloud"],
+    "toolbarBgColor": "#006bb8",
+    "exclude": [
+      ".*-about$",
+      "^lang-.*"
+    ]
+  }

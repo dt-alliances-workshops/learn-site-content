@@ -1,0 +1,267 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Dynatrace Technical Alliances Workshop provide a guided, tutorial-based hands-on learning experience.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Dynatrace Technical Alliances Workshops">
+  <meta name="application-name" content="Dynatrace Technical Alliances Workshops">
+  <link rel="canonical" href="https://dynatrace-perfclinics.github.io//" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <script>
+    window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+    ga('create', 'UA-193960361-1', 'auto');
+    ga('send', 'pageview');
+    
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  <title>Dynatrace Technical Alliances Workshops</title>
+
+  <link rel="stylesheet" href="/styles/main.css">
+
+  
+
+  <link rel="import" href="/elements/elements.html">
+
+  <style is="custom-style">
+    :root {
+      --paper-tabs-selection-bar-color: currentcolor;
+
+      --paper-input-container-underline: {
+        display: none;
+      }
+
+      ;
+
+      --paper-input-container-underline-focus: {
+        display: none;
+      }
+
+      ;
+    }
+
+    .dropdown-filter {
+      --paper-input-container: {
+        padding: 8px;
+      }
+    }
+  </style>
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#455a64">
+  <meta name="apple-mobile-web-app-title" content="Dynatrace Technical Alliances Workshops">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="194x194" href="/images/favicons/favicon-194x194.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#455a64">
+  <meta name="msapplication-TileColor" content="#455a64">
+  <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#455a64">
+
+  <meta name="og:type" property="og:type" content="website" />
+  <meta name="og:title" property="og:title" content="Dynatrace Technical Alliances Workshops" />
+  <meta name="og:description" property="og:description" content="Dynatrace Technical Alliances Workshop provide a guided, tutorial-based hands-on learning experience." />
+  <meta name="og:url" property="og:url" content="https://dynatrace-perfclinics.github.io//" />
+  <meta name="og:site_name" property="og:site_name" content="Codelabs" />
+  <meta name="og:determiner" property="og:determiner" content="the" />
+  <meta name="og:locale" property="og:locale" content="en_US" />
+  <meta name="og:image" property="og:image" content="/images/og-image.png" />
+  <meta name="og:image:url" property="og:image:url" content="/images/og-image.png" />
+  <meta name="og:image:type" property="og:image:type" content="image/png" />
+  <meta name="og:image:width" property="og:image:width" content="1200" />
+  <meta name="og:image:height" property="og:image:height" content="1200" />
+  <meta name="og:image:alt" property="og:image:alt" content="Codelabs" />
+
+  <meta name="twitter:card" property="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" property="twitter:title" content="Dynatrace Technical Alliances Workshops" />
+  <meta name="twitter:description" property="twitter:description" content="Dynatrace Technical Alliances Workshop provide a guided, tutorial-based hands-on learning experience." />
+  <meta name="twitter:image" property="twitter:image" content="/images/og-image.png" />
+  <meta name="twitter:url" property="twitter:url" content="https://dynatrace-perfclinics.github.io//" />
+</head>
+
+<body id="app" is="body-bind" class="loading fullbleed ">
+  <paper-header-panel id="main" mode="standard" main>
+    
+    <div id="mainToolbar" class="paper-header">
+      <div class="site-width layout horizontal">
+        <a href="/">
+          <img src="/images/logo.png" class="logo-devs" alt="Codelabs Logo">
+        </a>
+        <div id="searchbar">
+          <paper-input-container no-label-float>
+            <paper-icon-button prefix icon="search"></paper-icon-button>
+            <label>Search</label>
+            <input is="iron-input" bind-value="{{searchVal}}" on-keydown="onSearchKeyDown">
+          </paper-input-container>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    <header id="banner" down$="[[_toBoolean(selectedFilter)]]">
+      <div class="site-width">
+        
+        <h2 class="banner-title">Welcome to Dynatrace Technical Alliances Workshops!</h2>
+        <div class="banner-description" data-filter-selected$="[[_toBoolean(selectedFilter)]]">
+          <p class="banner-info">
+            Dynatrace Technical Alliances Workshop provide a guided, tutorial-based hands-on learning experience.
+            <br>
+            <a href="https://github.com/dynatrace-perfclinics"  target="_blank" class="button">Dynatrace Perfclinics on Github</a>
+            <a href="https://www.youtube.com/c/dynatrace"  target="_blank" class="button">Dynatrace on Youtube</a>
+            <a href="https://www.dynatrace.com/request-demo/"   target="_blank" class="button">Request a Demo</a>
+            <a href="https://www.dynatrace.com/trial/"  target="_blank" class="button">Free Trial</a>
+          </p>
+          </div>
+        </div>
+    </header>
+
+    <main>
+      <div id="filters" class="site-width layout horizontal center justified">
+        <div id="sortby">
+          <paper-tabs selected="0" noink on-iron-activate="sortBy">
+            <paper-tab>A-Z</paper-tab>
+            <paper-tab>Recent</paper-tab>
+            <paper-tab>Duration</paper-tab>
+          </paper-tabs>
+        </div>
+        <paper-dropdown-menu label="Choose a Type" class="dropdown-filter" no-label-float noink no-animations>
+          <paper-listbox id="eventlist" slot="dropdown-content" class="dropdown-content"><a href="/cloud/" tabindex="-1">
+                  <paper-item>Cloud Labs</paper-item>
+                </a>
+              <a href="/Infra/" tabindex="-1">
+                  <paper-item>Infra</paper-item>
+                </a>
+              
+          </paper-listbox>
+        </paper-dropdown-menu><paper-dropdown-menu label="Filter by category" class="dropdown-filter" no-label-float noink no-animations>
+          <paper-listbox id="categorylist" slot="dropdown-content" class="dropdown-content"
+            on-iron-activate="onCategoryActivate" attr-for-selected="filter">
+            <paper-item filter="azure">azure</paper-item>
+            
+          </paper-listbox>
+        </paper-dropdown-menu></div>
+
+      <card-sorter id="cards" class="site-width">
+        
+        
+        
+        <a href="/codelabs\lab-3\index.html?index=..%2F..index" on-tap="navigate"
+          class="codelab-card category-default" data-category=""
+          data-title="LAB 3" data-duration="0" data-updated="2021-12-14T17:21:42-05:00"
+          data-tags="" data-pin="">
+          <div class="description">LAB 3</div>
+          <div class="card-duration">
+            <span></span>
+            <span>Updated Dec 14, 2021</span>
+          </div>
+          <div class="card-footer">
+            <div class="category-icon default-icon"></div>
+            <paper-button class="default-bg">Start</paper-button>
+          </div>
+        </a>
+        
+        
+        
+        <a href="/codelabs\lab-1\index.html?index=..%2F..index" on-tap="navigate"
+          class="codelab-card category-azure" data-category="azure"
+          data-title="LAB 1 - OneAgent Observability" data-duration="3" data-updated="2021-12-22T15:20:56-05:00"
+          data-tags="cloud" data-pin="">
+          <div class="description">LAB 1 - OneAgent Observability</div>
+          <div class="card-duration">
+            <span>3 min </span>
+            <span>Updated Dec 22, 2021</span>
+          </div>
+          <div class="card-footer">
+            <div class="category-icon azure-icon"></div>
+            <paper-button class="azure-bg">Start</paper-button>
+          </div>
+        </a>
+        
+        
+        
+        <a href="/codelabs\lab-2\index.html?index=..%2F..index" on-tap="navigate"
+          class="codelab-card category-azure" data-category="azure"
+          data-title="LAB 2" data-duration="0" data-updated="2021-12-14T17:11:23-05:00"
+          data-tags="" data-pin="">
+          <div class="description">LAB 2</div>
+          <div class="card-duration">
+            <span></span>
+            <span>Updated Dec 14, 2021</span>
+          </div>
+          <div class="card-footer">
+            <div class="category-icon azure-icon"></div>
+            <paper-button class="azure-bg">Start</paper-button>
+          </div>
+        </a>
+        
+      </card-sorter>
+
+      <div id="loading-placeholder" class="site-width">
+        Loading Codelabs, please wait...
+      </div>
+    </main>
+
+    <footer id="footer">
+      <div class="footer-wrapper site-width">
+        <div class="link-list">
+          <label>Dynatrace Community</label>
+          <ul>
+            <li><a href="https://help.dynatrace.com/">Documentation</a></li>
+            <li><a href="https://university.dynatrace.com/">University</a></li>
+            <li><a href="https://answers.dynatrace.com/">Forums</a></li>
+            <li><a href="https://www.youtube.com/c/dynatrace">Youtube</a></li>
+          </ul>
+        </div>
+        <div class="link-list">
+          <label>Dynatrace Resources</label>
+          <ul>
+            <li><a href="https://github.com/Dynatrace">Github</a></li>
+            <li><a href="https://www.dynatrace.com/news/blog/">Blog</a></li>
+            <li><a href="https://www.dynatrace.com/news/webinar/">Webinars</a></li>
+          </ul>
+        </div>
+        <div class="link-list">
+          <label>Learn More</label>
+          <ul>
+            <li><a href="https://www.dynatrace.com/">Dynatrace</a></li>
+            <li><a href="https://www.keptn.sh/">Keptn.sh</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footerbar">
+      <hr>
+      <div class="site-width layout horizontal center justified">
+        <span>
+          <a href="https://www.dynatrace.com/company/trust-center/terms-of-use/">Terms</a>
+          &nbsp; | &nbsp;
+          <a
+            href="https://www.dynatrace.com/support/help/how-to-use-dynatrace/data-privacy-and-security/data-privacy/">Privacy</a>
+        </span>
+      </div>
+    </div>
+
+  </paper-header-panel>
+
+  <script src="/scripts/main.js"></script>
+</body>
+
+</html>

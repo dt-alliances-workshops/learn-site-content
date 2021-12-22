@@ -3,10 +3,10 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-193960361-1",
-  "updated": "2021-12-15T09:27:51-05:00",
+  "updated": "2021-12-22T15:20:56-05:00",
   "id": "lab-1",
-  "duration": 0,
-  "title": "LAB 1",
+  "duration": 3,
+  "title": "LAB 1 - OneAgent Observability",
   "summary": "",
   "source": "codelabs/markdown/lab1/README.md",
   "theme": "",
@@ -14,8 +14,10 @@
     "published"
   ],
   "category": [
-    "david"
+    "azure"
   ],
-  "tags": [],
+  "tags": [
+    "cloud"
+  ],
   "url": "lab-1"
 }

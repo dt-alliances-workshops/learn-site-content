@@ -156,7 +156,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <paper-tab>Duration</paper-tab>
           </paper-tabs>
         </div>
-
+        <paper-dropdown-menu label="Choose a Type" class="dropdown-filter" no-label-float noink no-animations>
+          <paper-listbox id="eventlist" slot="dropdown-content" class="dropdown-content">
+            {%- for view in views -%}
+              {%- if view.id != 'default' && !view.hidden -%}
+                <a href="/{{view.url}}/" tabindex="-1">
+                  <paper-item>{{view.title}}</paper-item>
+                </a>
+              {%- endif -%}
+            {%- endfor %}
+          </paper-listbox>
+        </paper-dropdown-menu>
         {%- if showcats -%}
         <paper-dropdown-menu label="Filter by category" class="dropdown-filter" no-label-float noink no-animations>
           <paper-listbox id="categorylist" slot="dropdown-content" class="dropdown-content"

@@ -1,5 +1,5 @@
 id: lab-3
-categories:
+categories: aws,mike
 status: Published
 
 # LAB 3

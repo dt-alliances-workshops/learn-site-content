@@ -153,7 +153,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </paper-dropdown-menu><paper-dropdown-menu label="Filter by category" class="dropdown-filter" no-label-float noink no-animations>
           <paper-listbox id="categorylist" slot="dropdown-content" class="dropdown-content"
             on-iron-activate="onCategoryActivate" attr-for-selected="filter">
+            <paper-item filter="aws">aws</paper-item>
             <paper-item filter="azure">azure</paper-item>
+            <paper-item filter="mike">mike</paper-item>
             
           </paper-listbox>
         </paper-dropdown-menu></div>
@@ -162,31 +164,31 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         
         
         
-        <a href="/codelabs\lab-3\index.html?index=..%2F..index" on-tap="navigate"
-          class="codelab-card category-default" data-category=""
-          data-title="LAB 3" data-duration="0" data-updated="2021-12-14T17:21:42-05:00"
+        <a href="/codelabs/lab-3/index.html?index=..%2F..index" on-tap="navigate"
+          class="codelab-card category-aws" data-category="aws,mike"
+          data-title="LAB 3" data-duration="0" data-updated="2022-01-20T13:14:23-05:00"
           data-tags="" data-pin="">
           <div class="description">LAB 3</div>
           <div class="card-duration">
             <span></span>
-            <span>Updated Dec 14, 2021</span>
+            <span>Updated Jan 20, 2022</span>
           </div>
           <div class="card-footer">
-            <div class="category-icon default-icon"></div>
-            <paper-button class="default-bg">Start</paper-button>
+            <div class="category-icon aws-icon"></div>
+            <paper-button class="aws-bg">Start</paper-button>
           </div>
         </a>
         
         
         
-        <a href="/codelabs\lab-1\index.html?index=..%2F..index" on-tap="navigate"
+        <a href="/codelabs/lab-1/index.html?index=..%2F..index" on-tap="navigate"
           class="codelab-card category-azure" data-category="azure"
-          data-title="LAB 1 - OneAgent Observability" data-duration="3" data-updated="2021-12-22T15:20:56-05:00"
+          data-title="LAB 1 - OneAgent Observability" data-duration="3" data-updated="2022-01-20T13:10:43-05:00"
           data-tags="cloud" data-pin="">
           <div class="description">LAB 1 - OneAgent Observability</div>
           <div class="card-duration">
             <span>3 min </span>
-            <span>Updated Dec 22, 2021</span>
+            <span>Updated Jan 20, 2022</span>
           </div>
           <div class="card-footer">
             <div class="category-icon azure-icon"></div>
@@ -196,18 +198,35 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         
         
         
-        <a href="/codelabs\lab-2\index.html?index=..%2F..index" on-tap="navigate"
-          class="codelab-card category-azure" data-category="azure"
-          data-title="LAB 2" data-duration="0" data-updated="2021-12-14T17:11:23-05:00"
+        <a href="/codelabs/lab-2/index.html?index=..%2F..index" on-tap="navigate"
+          class="codelab-card category-azure" data-category="azure,aws,mike"
+          data-title="LAB 2" data-duration="0" data-updated="2022-01-20T13:14:17-05:00"
           data-tags="" data-pin="">
           <div class="description">LAB 2</div>
           <div class="card-duration">
             <span></span>
-            <span>Updated Dec 14, 2021</span>
+            <span>Updated Jan 20, 2022</span>
           </div>
           <div class="card-footer">
             <div class="category-icon azure-icon"></div>
             <paper-button class="azure-bg">Start</paper-button>
+          </div>
+        </a>
+        
+        
+        
+        <a href="/codelabs/lab-4/index.html?index=..%2F..index" on-tap="navigate"
+          class="codelab-card category-mike" data-category="mike"
+          data-title="LAB 4 Mike" data-duration="0" data-updated="2022-01-20T13:18:11-05:00"
+          data-tags="" data-pin="">
+          <div class="description">LAB 4 Mike</div>
+          <div class="card-duration">
+            <span></span>
+            <span>Updated Jan 20, 2022</span>
+          </div>
+          <div class="card-footer">
+            <div class="category-icon mike-icon"></div>
+            <paper-button class="mike-bg">Start</paper-button>
           </div>
         </a>
         

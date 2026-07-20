@@ -61,16 +61,16 @@ finite, closeable work packet.
 | Live environment | **Docs-first** — standard devcontainer scaffold, minimal `post-create.sh`, no cloud provisioning. Labs reference the learner's own cloud account in prose, as today. Live automation added per-repo later. |
 | Archived (`Unused/`) | **Excluded.** |
 | Japanese variants (`*-jp`) | **Excluded** (i18n revisited later). |
+| RedHat/OpenShift 101 (9 labs) | **Excluded** — the team no longer manages the RedHat relationship. |
 | `status: Hidden` codelabs | **Included** (migrated). |
 | AWS Immersion Day variants (SAAS/Serverless) | **Consolidated** into one AWS repo via tabs/sections, not separate repos. |
 
-### Target repositories (~6, ~40 codelabs)
+### Target repositories (~5, ~31 codelabs)
 1. `enablement-azure-grail` — 6 labs *(pilot)*
 2. `enablement-azure-aks-levelup` — 4 labs
-3. `enablement-openshift-101` — 9 labs
-4. `enablement-azure-gen2` — 11 labs
-5. `enablement-aws-immersion-day` — ~22 labs (variant consolidation)
-6. AWS Self-paced — folds into the AWS repo (final naming TBD during pilot)
+3. `enablement-azure-gen2` — 11 labs
+4. `enablement-aws-immersion-day` — ~22 labs (variant consolidation)
+5. AWS Self-paced — folds into the AWS repo (final naming TBD during pilot)
 
 ---
 
@@ -114,7 +114,7 @@ JSON transform+flag log that feeds `REVIEW.md`.
 | 7 | `![image](img/x.png)` (910) | `![<derived alt>](img/x.png)`; images copied, spaces→hyphens | Auto; alt → Flag (batch) |
 | 8 | Dir/id names with spaces (8) | Slugified (`aws-lab4 role`→`aws-lab4-role`) | Auto |
 | 9 | `<a href … target="_blank">` (254) | `[text](url){target="_blank"}` | Auto |
-| 10 | `<table>`/`<tr>` HTML (3 RedHat files) | Left as raw HTML (`md_in_html`) | Auto; visual check → Flag |
+| 10 | `<table>`/`<tr>` raw HTML | Left as raw HTML (`md_in_html`) | Auto; visual check → Flag *(the 3 known cases were RedHat, now out of scope)* |
 | 11 | `<br>`/`<b>`/`<i>`/`<blockquote>` | Kept as-is | Auto |
 | 12 | Repeated `1.` deep-indented lists | Re-indented to 4-space Python-Markdown | Auto |
 | 13 | Emoji-as-semantics (`🔷`,`📓`,`💥💥💥`) | Preserved verbatim | Auto |
@@ -160,16 +160,28 @@ repos × item counts × assignee × status for one-page fan-out and tracking.
   real `Duration:` data) as the reference conversion. Exercises every transform
   rule without AWS variant complexity. Validate + tune rules, then fan out.
 - **Order after pilot (ascending difficulty):** Azure AKS LevelUp (4) →
-  OpenShift 101 (9) → Azure Gen2 (11) → AWS Immersion Day (22, variant
-  consolidation).
+  Azure Gen2 (11) → AWS Immersion Day (22, variant consolidation).
 - **Validation gates per repo:** (1) `mkdocs build --strict` zero warnings at
   generation, (2) all `REVIEW.md` §1 boxes checked, (3) integration CI green.
 - **Converter test:** a fixture CLaaT file containing one of each construct with
   asserted output, so rule regressions are caught.
 
 ### Explicitly out of scope
-JP variants; `Unused/` archived labs; live cloud provisioning (docs-first);
-the Polymer/gulp/`claat`/S3 stack (discarded, not migrated).
+JP variants; RedHat/OpenShift 101 (relationship no longer team-managed);
+`Unused/` archived labs; live cloud provisioning (docs-first); the
+Polymer/gulp/`claat`/S3 stack (discarded, not migrated).
+
+### Delivery constraints (hard)
+- **Branch-only. No PR to `main` at this time.** Everything the migration
+  produces is committed to branch(es) only. The `REVIEW.md` "Definition of done"
+  and `MIGRATION-TRACKER.md` track branch readiness, **not** merge. The framework
+  `repos.yaml` registration and GitHub Pages publication (pipeline step 5) are
+  **deferred** — do not open PRs against `main` or publish until the owner
+  explicitly lifts this hold.
+- **Content structure is expected to change.** The source kept all content in one
+  place; the framework is one repo per workshop. The final per-repo structure may
+  diverge from a naive 1:1 port as we match the new framework — treat the
+  per-repo `docs/` layout as provisional until the pilot validates it.
 
 ---
 

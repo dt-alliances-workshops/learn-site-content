@@ -4,7 +4,7 @@ import re
 from migration.claat.models import Flag
 from migration.claat.slugify import slug_filename
 
-_IMG_RE = re.compile(r"!\[[^\]]*\]\(img/([^)]+)\)")
+_IMG_RE = re.compile(r"!\[[^\]]*\]\(img/+([^)]+)\)")
 
 
 def _alt_from_slug(slug: str) -> str:

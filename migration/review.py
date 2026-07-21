@@ -5,11 +5,12 @@ import sys
 
 _SECTION_TITLES = {
     "blocking": "## 1. Blocking — must resolve before committing the branch",
-    "screenshot": "## 2. Run & re-capture (validates technical accuracy)",
-    "alt": "## 3. Alt-text review (batch-approvable)",
-    "judgment": "## 4. Judgment calls (does this lab still belong?)",
+    "env": "## 2. Environment (cloud-account prose) — confirm docs-first wording",
+    "screenshot": "## 3. Run & re-capture (validates technical accuracy)",
+    "alt": "## 4. Alt-text review (batch-approvable)",
+    "judgment": "## 5. Judgment calls (does this lab still belong?)",
 }
-_ORDER = ["blocking", "screenshot", "alt", "judgment"]
+_ORDER = ["blocking", "env", "screenshot", "alt", "judgment"]
 
 
 def _items(log: dict, section: str) -> list[str]:
@@ -43,7 +44,8 @@ def build_review(log: dict, repo_dir) -> str:
         "- Lab → page map:",
     ]
     for lab in log["labs"]:
-        lines.append(f"    - {lab['source']} → {lab['page']} ({lab['image_count']} images)")
+        lines.append(f"    - {lab['source']} → {lab['page']} "
+                     f"(id: {lab.get('id', '?')}, {lab['image_count']} images)")
     lines.append("")
 
     for section in _ORDER:
@@ -53,7 +55,7 @@ def build_review(log: dict, repo_dir) -> str:
         lines.append("")
 
     lines += [
-        "## 5. Definition of done",
+        "## 6. Definition of done",
         "- [ ] All boxes above checked",
         "- [ ] `mkdocs build --strict` still clean",
         "- [ ] repos.yaml snippet reviewed (see REVIEW-repos-snippet.yaml) — "

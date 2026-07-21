@@ -17,5 +17,6 @@ __pycache__/
 # SDD scratch (ledger, task briefs/reports) — never commit
 .superpowers/
 
-# CLaaT migration generated repos (branch-only artifacts, do not commit)
-migration/out/
+# CLaaT migration: commit generated repo SOURCE for review; never commit build output or scratch
+migration/out/**/site/
+migration/out/_*

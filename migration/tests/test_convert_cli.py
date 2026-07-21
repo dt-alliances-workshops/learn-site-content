@@ -1,6 +1,8 @@
 import json
 import pathlib
 
+import yaml
+
 from migration.convert import convert_workshop
 from migration.registry import Workshop
 
@@ -57,3 +59,29 @@ def test_convert_workshop_writes_pages_images_id_and_flags(tmp_path):
     assert {"env", "screenshot", "judgment"} <= sections  # env from cloud-prose scan
     nav = (out / "mkdocs.yaml").read_text()
     assert "1-demo-lab0.md" in nav and "NAV_PLACEHOLDER" not in nav
+
+
+def test_convert_workshop_escapes_quotes_in_title_for_nav(tmp_path):
+    # Regression test: lab title with double-quotes must be escaped in YAML nav
+    corpus = tmp_path / "corpus"
+    corpus.mkdir()
+    lab_dir = corpus / "quote-lab"
+    (lab_dir / "img").mkdir(parents=True)
+    (lab_dir / "img" / "pic.png").write_bytes(b"x")
+    (lab_dir / "README.md").write_text(
+        'id: quote-lab-id\ntags: demo-tag\n\n# Deploy the "Astroshop" demo\n\n'
+        '## Step\nDuration: 5\n\nOpen the portal.\n\n'
+        '![image](img/pic.png)\n'
+    )
+    out = tmp_path / "out"
+    _scaffold_stub(out)
+    w = Workshop("demo", "enablement-demo", "Demo", "tag", "demo-tag", ["x"], "1h")
+    log = convert_workshop(w, corpus, out)
+    # Verify the mkdocs.yaml was generated
+    assert len(log["labs"]) == 1
+    # Parse the generated mkdocs.yaml; this will raise if quotes are not escaped
+    mk_yaml = (out / "mkdocs.yaml").read_text()
+    parsed = yaml.safe_load(mk_yaml)
+    # Confirm the nav structure is valid
+    assert "nav" in parsed
+    assert parsed["nav"] is not None

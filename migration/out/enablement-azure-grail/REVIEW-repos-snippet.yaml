@@ -1,0 +1,9 @@
+  - name: enablement-azure-grail
+    repo: dynatrace-wwse/enablement-azure-grail
+    status: active
+    maintainer: "@TODO"
+    description: "TODO one-line description"
+    tags: [azure, grail, kubernetes]
+    title: "Azure Grail"
+    primary_tag: azure
+    duration: "2h"

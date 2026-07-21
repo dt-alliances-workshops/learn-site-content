@@ -1,0 +1,631 @@
+{
+  "repo": "enablement-aws-serverless",
+  "workshop": "aws-serverless",
+  "labs": [
+    {
+      "labslug": "aws-lab0-immersion-day",
+      "source": "aws-lab0 immersion-day",
+      "page": "docs/1-aws-lab0-immersion-day.md",
+      "id": "aws-lab0 immersion-day",
+      "title": "AWS Lab 0 - Introduction and Setup",
+      "total_minutes": 0,
+      "image_count": 15,
+      "flags": [
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('WelcometoDT') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab0-immersion-day/WelcometoDT.png",
+          "line": 37
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('event engine initial screen') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab0-immersion-day/event-engine-initial-screen.png",
+          "line": 49
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('one time password') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab0-immersion-day/one-time-password.png",
+          "line": 53
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('send passcode') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab0-immersion-day/send-passcode.png",
+          "line": 57
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('enter passcode') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab0-immersion-day/enter-passcode.png",
+          "line": 61
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('aws event engine') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab0-immersion-day/aws-event-engine.png",
+          "line": 65
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('aws event engine popup') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab0-immersion-day/aws-event-engine-popup.png",
+          "line": 69
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup aws portal') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab0-immersion-day/setup-aws-portal.png",
+          "line": 73
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 change region') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab0-immersion-day/lab2-change-region.png",
+          "line": 89
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup cloud shell icon') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab0-immersion-day/setup-cloud-shell-icon.png",
+          "line": 98
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 cloudshell splash page') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab0-immersion-day/lab2-cloudshell-splash-page.png",
+          "line": 102
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup cloud shell') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab0-immersion-day/setup-cloud-shell.png",
+          "line": 106
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('dt provision dashboard list') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab0-immersion-day/dt-provision-dashboard-list.png",
+          "line": 146
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('dt copy command') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab0-immersion-day/dt-copy-command.png",
+          "line": 150
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('CFTCreateCompeleteMonoAG') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab0-immersion-day/CFTCreateCompeleteMonoAG.png",
+          "line": 194
+        },
+        {
+          "section": "env",
+          "message": "References a cloud account/portal ('aws console'); confirm docs-first wording (learner uses their own account).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "screenshot",
+          "message": "Run this lab and verify its 15 screenshots are current (technical-accuracy gate).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "judgment",
+          "message": "Confirm this lab still belongs in the migrated workshop.",
+          "locator": "",
+          "line": 0
+        }
+      ],
+      "metadata": {
+        "id": "aws-lab0 immersion-day",
+        "categories": "modernization,kubernetes,serverless",
+        "tags": "aws-immersion-day, aws-immersion-day-serverless",
+        "status": "Published"
+      }
+    },
+    {
+      "labslug": "aws-lab6",
+      "source": "aws-lab6",
+      "page": "docs/2-aws-lab6.md",
+      "id": "aws-lab6",
+      "title": "AWS Lab 6 - Dynatrace Operator for Kubernetes",
+      "total_minutes": 0,
+      "image_count": 11,
+      "flags": [
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 setup') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab6/lab2-setup.png",
+          "line": 54
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup cloudformation search') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab6/setup-cloudformation-search.png",
+          "line": 87
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup cloudformation stacks') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab6/setup-cloudformation-stacks.png",
+          "line": 95
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup cloudformation stacks details') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab6/setup-cloudformation-stacks-details.png",
+          "line": 99
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup stack complete') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab6/setup-stack-complete.png",
+          "line": 107
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup eks cluster') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab6/setup-eks-cluster.png",
+          "line": 115
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup eks cluster detail') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab6/setup-eks-cluster-detail.png",
+          "line": 119
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 operator menu') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab6/lab4-operator-menu.png",
+          "line": 186
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 operator new') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab6/lab4-operator-new.png",
+          "line": 194
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('mz pick all') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab6/mz-pick-all.png",
+          "line": 253
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 eks hosts') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab6/lab2-eks-hosts.png",
+          "line": 257
+        },
+        {
+          "section": "env",
+          "message": "References a cloud account/portal ('aws console'); confirm docs-first wording (learner uses their own account).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "screenshot",
+          "message": "Run this lab and verify its 11 screenshots are current (technical-accuracy gate).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "judgment",
+          "message": "Confirm this lab still belongs in the migrated workshop.",
+          "locator": "",
+          "line": 0
+        }
+      ],
+      "metadata": {
+        "id": "aws-lab6",
+        "categories": "kubernetes,SAAS,serverless",
+        "tags": "aws-immersion-day,aws-selfpaced,aws-immersion-day-saas,aws-immersion-day-serverless",
+        "status": "Published"
+      }
+    },
+    {
+      "labslug": "aws-lab7",
+      "source": "aws-lab7",
+      "page": "docs/3-aws-lab7.md",
+      "id": "aws-lab7",
+      "title": "AWS Lab 7 - Modernization with Kubernetes",
+      "total_minutes": 10,
+      "image_count": 20,
+      "flags": [
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "**\ud83d\udc4d How this helps**",
+          "line": 234
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "**\ud83d\udc4d How this helps**",
+          "line": 295
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 k8s namespaces') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab7/lab2-k8s-namespaces.png",
+          "line": 105
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 k8s layers') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab7/lab2-k8s-layers.png",
+          "line": 182
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 aks nodeutiliz') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab7/lab4-aks-nodeutiliz.png",
+          "line": 188
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 aks workload') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab7/lab4-aks-workload.png",
+          "line": 193
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 aks workload filter') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab7/lab4-aks-workload-filter.png",
+          "line": 195
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('la4 aks kubeworkload') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab7/la4-aks-kubeworkload.png",
+          "line": 199
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 aks frontend workload') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab7/lab4-aks-frontend-workload.png",
+          "line": 202
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 aks pod') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab7/lab4-aks-pod.png",
+          "line": 206
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 aks container') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab7/lab4-aks-container.png",
+          "line": 214
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('aks layer7 service') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab7/aks-layer7-service.png",
+          "line": 220
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 step8 services') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab7/lab2-step8-services.png",
+          "line": 241
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 k8 mgmtzone filter') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab7/lab4-k8-mgmtzone-filter.png",
+          "line": 243
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 k8 service filter') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab7/lab4-k8-service-filter.png",
+          "line": 245
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 k8 service view mod') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab7/lab4-k8-service-view-mod.png",
+          "line": 248
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 k8 service backflow') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab7/lab4-k8-service-backflow.png",
+          "line": 258
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 step8 services') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab7/lab2-step8-services.png",
+          "line": 267
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 k8 mgmtzone filter') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab7/lab4-k8-mgmtzone-filter.png",
+          "line": 269
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 k8 frontendservice filter') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab7/lab4-k8-frontendservice-filter.png",
+          "line": 271
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 serviceflow') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab7/lab4-serviceflow.png",
+          "line": 273
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 serviceflow responsetime') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab7/lab4-serviceflow-responsetime.png",
+          "line": 281
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 serviceflow thoroughput') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab7/lab4-serviceflow-thoroughput.png",
+          "line": 288
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 picture future') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab7/lab2-picture-future.png",
+          "line": 307
+        },
+        {
+          "section": "screenshot",
+          "message": "Run this lab and verify its 20 screenshots are current (technical-accuracy gate).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "judgment",
+          "message": "Confirm this lab still belongs in the migrated workshop.",
+          "locator": "",
+          "line": 0
+        }
+      ],
+      "metadata": {
+        "id": "aws-lab7",
+        "categories": "kubernetes,SAAS,serverless",
+        "tags": "aws-immersion-day,aws-selfpaced,aws-immersion-day-saas,aws-immersion-day-serverless",
+        "status": "Published"
+      }
+    },
+    {
+      "labslug": "aws-lab11-serverless",
+      "source": "aws-lab11-serverless",
+      "page": "docs/4-aws-lab11-serverless.md",
+      "id": "aws-lab11-serverless-setup",
+      "title": "AWS Lab 11 - Modernization with AWS Serverless Lambda",
+      "total_minutes": 0,
+      "image_count": 12,
+      "flags": [
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('19 Lambda 1') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab11-serverless/19-Lambda-1.png",
+          "line": 57
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('serverlesswebsite') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab11-serverless/serverlesswebsite.png",
+          "line": 62
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('serverlesscronjob') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab11-serverless/serverlesscronjob.png",
+          "line": 65
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('serverlessevents') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab11-serverless/serverlessevents.png",
+          "line": 68
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('serverlessfile') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab11-serverless/serverlessfile.png",
+          "line": 71
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('serverlesswebhook') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab11-serverless/serverlesswebhook.png",
+          "line": 74
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 picture future') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab11-serverless/lab2-picture-future.png",
+          "line": 80
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lambdaAssests2') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab11-serverless/lambdaAssests2.png",
+          "line": 108
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lambdaDeploy') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab11-serverless/lambdaDeploy.png",
+          "line": 120
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('CWLambdas1') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab11-serverless/CWLambdas1.png",
+          "line": 154
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('catalog service serverless') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab11-serverless/catalog-service-serverless.png",
+          "line": 169
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('catalogDeploy') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab11-serverless/catalogDeploy.png",
+          "line": 179
+        },
+        {
+          "section": "env",
+          "message": "References a cloud account/portal ('aws console'); confirm docs-first wording (learner uses their own account).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "screenshot",
+          "message": "Run this lab and verify its 12 screenshots are current (technical-accuracy gate).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "judgment",
+          "message": "Confirm this lab still belongs in the migrated workshop.",
+          "locator": "",
+          "line": 0
+        }
+      ],
+      "metadata": {
+        "id": "aws-lab11-serverless-setup",
+        "categories": "kubernetes,serverless,saas,all",
+        "tags": "aws-immersion-day,aws-selfpaced,aws-immersion-day-saas,aws-immersion-day-serverless",
+        "status": "Published"
+      }
+    },
+    {
+      "labslug": "aws-lab12-serverless-observability",
+      "source": "aws-lab12-serverless observability",
+      "page": "docs/5-aws-lab12-serverless-observability.md",
+      "id": "aws-lab12-serverless observability",
+      "title": "AWS Lab 12 - Serverless Observability with Dynatrace",
+      "total_minutes": 0,
+      "image_count": 14,
+      "flags": [
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lambdaServices') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab12-serverless-observability/lambdaServices.png",
+          "line": 8
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('deployLambda') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab12-serverless-observability/deployLambda.png",
+          "line": 12
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('deployLambdaSettings') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab12-serverless-observability/deployLambdaSettings.png",
+          "line": 19
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('awsLambdaVar') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab12-serverless-observability/awsLambdaVar.png",
+          "line": 30
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('cwLambdaLink') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab12-serverless-observability/cwLambdaLink.png",
+          "line": 35
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('serviceFlow') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab12-serverless-observability/serviceFlow.png",
+          "line": 44
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('frontendServiceFlow') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab12-serverless-observability/frontendServiceFlow.png",
+          "line": 48
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('catalogdServiceFlow') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab12-serverless-observability/catalogdServiceFlow.png",
+          "line": 55
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('filter') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab12-serverless-observability/filter.png",
+          "line": 62
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('feDistributedTracing') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab12-serverless-observability/feDistributedTracing.png",
+          "line": 66
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('catalogDTracing') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab12-serverless-observability/catalogDTracing.png",
+          "line": 70
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('trace') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab12-serverless-observability/trace.png",
+          "line": 74
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lambdaDT') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab12-serverless-observability/lambdaDT.png",
+          "line": 85
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('otelDT') \u2014 confirm it reads sensibly.",
+          "locator": "img/aws-lab12-serverless-observability/otelDT.png",
+          "line": 93
+        },
+        {
+          "section": "env",
+          "message": "References a cloud account/portal ('aws console'); confirm docs-first wording (learner uses their own account).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "screenshot",
+          "message": "Run this lab and verify its 14 screenshots are current (technical-accuracy gate).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "judgment",
+          "message": "Confirm this lab still belongs in the migrated workshop.",
+          "locator": "",
+          "line": 0
+        }
+      ],
+      "metadata": {
+        "id": "aws-lab12-serverless observability",
+        "categories": "kubernetes,serverless,saas,all",
+        "tags": "aws-immersion-day,aws-selfpaced,aws-immersion-day-saas,aws-immersion-day-serverless",
+        "status": "Published"
+      }
+    }
+  ]
+}

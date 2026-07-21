@@ -1,0 +1,9 @@
+  - name: enablement-aws-immersion-day
+    repo: dynatrace-wwse/enablement-aws-immersion-day
+    status: active
+    maintainer: "@TODO"
+    description: "TODO one-line description"
+    tags: [aws]
+    title: "AWS Immersion Day"
+    primary_tag: aws
+    duration: "3h"

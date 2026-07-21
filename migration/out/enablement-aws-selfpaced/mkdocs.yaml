@@ -1,0 +1,24 @@
+INHERIT: mkdocs-base.yaml
+
+site_name: "Dynatrace Enablement Lab: AWS Self-paced"
+repo_name: "View Code on GitHub"
+repo_url: "https://github.com/dynatrace-wwse/enablement-aws-selfpaced"
+nav:
+  - "Welcome": index.md
+  - "1. AWS & Dynatrace - Better Together": 1-aws-better-together.md
+  - "2. AWS Lab 1 - OneAgent Observability": 2-aws-lab1.md
+  - "3. AWS Lab 3 - SLOs": 3-aws-lab3.md
+  - "4. AWS Lab 4 - AWS CloudWatch Integration": 4-aws-lab4-role.md
+  - "5. AWS Lab 5 - Davis AI": 5-aws-lab5-davis-mono.md
+  - "6. AWS Lab 6 - Dynatrace Operator for Kubernetes": 6-aws-lab6.md
+  - "7. AWS Lab 7 - Modernization with Kubernetes": 7-aws-lab7.md
+  - "8. AWS Lab 8 - Kubernetes Events": 8-aws-lab8-k8-events.md
+  - "9. AWS Lab  9 - Davis AI for Kubernetes": 9-aws-lab9-davis-k8.md
+  - "10. AWS Lab 10 - Application Security": 10-aws-lab10-appsec.md
+  - "11. AWS Lab 11 - Modernization with AWS Serverless Lambda": 11-aws-lab11-serverless.md
+  - "12. AWS Lab 12 - Serverless Observability with Dynatrace": 12-aws-lab12-serverless-observability.md
+  - "13. AWS Lab Cleanup": 13-aws-lab-cleanup.md
+  - "14. AWS & Dynatrace - Self Paced Lab Overview": 14-aws-selfpaced.md
+
+extra:
+  rum_snippet: ""  # TODO: paste this repo's Dynatrace RUM snippet before go-live

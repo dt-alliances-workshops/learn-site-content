@@ -1,0 +1,1564 @@
+{
+  "repo": "enablement-azure-gen2",
+  "workshop": "azure-gen2",
+  "labs": [
+    {
+      "labslug": "azure-lab0-prereq",
+      "source": "azure-lab0-prereq",
+      "page": "docs/1-azure-lab0-prereq.md",
+      "id": "azure-lab0",
+      "title": "Azure Workshop Lab 0 - Setup",
+      "total_minutes": 32,
+      "image_count": 18,
+      "flags": [
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "Creating the storage will take a couple of minutes",
+          "line": 88
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('pre requisites dt managed') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab0-prereq/pre-requisites-dt-managed.png",
+          "line": 23
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup azure') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab0-prereq/setup-azure.png",
+          "line": 49
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('azure pass signin') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab0-prereq/azure-pass-signin.png",
+          "line": 51
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup ms account') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab0-prereq/setup-ms-account.png",
+          "line": 55
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('azure pass emailconfirm') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab0-prereq/azure-pass-emailconfirm.png",
+          "line": 58
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup azure shell open') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab0-prereq/setup-azure-shell-open.png",
+          "line": 73
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup azure shell bash') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab0-prereq/setup-azure-shell-bash.png",
+          "line": 78
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup azure shell storage') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab0-prereq/setup-azure-shell-storage.png",
+          "line": 84
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup azure shell prompt') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab0-prereq/setup-azure-shell-prompt.png",
+          "line": 91
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup azure shell newtab') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab0-prereq/setup-azure-shell-newtab.png",
+          "line": 94
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('pre requisites azure cli gitcloneoutput') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab0-prereq/pre-requisites-azure-cli-gitcloneoutput.png",
+          "line": 161
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('dt provision dashboard list') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab0-prereq/dt-provision-dashboard-list.png",
+          "line": 200
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('dt provision dashboard edit') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab0-prereq/dt-provision-dashboard-edit.png",
+          "line": 202
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('dt copy command 1') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab0-prereq/dt-copy-command-1.png",
+          "line": 204
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('pre requisites azure portal resources') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab0-prereq/pre-requisites-azure-portal-resources.png",
+          "line": 243
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('pre requisites azure portal resources resourcelist') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab0-prereq/pre-requisites-azure-portal-resources-resourcelist.png",
+          "line": 246
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup k8') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab0-prereq/setup-k8.png",
+          "line": 295
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup k8 node') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab0-prereq/setup-k8-node.png",
+          "line": 299
+        },
+        {
+          "section": "env",
+          "message": "References a cloud account/portal ('azure portal'); confirm docs-first wording (learner uses their own account).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "screenshot",
+          "message": "Run this lab and verify its 18 screenshots are current (technical-accuracy gate).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "judgment",
+          "message": "Confirm this lab still belongs in the migrated workshop.",
+          "locator": "",
+          "line": 0
+        }
+      ],
+      "metadata": {
+        "summary": "Lab 0 Dynatrace Workshop on Azure",
+        "id": "azure-lab0",
+        "categories": "gen2,all",
+        "tags": "azure-gen2",
+        "status": "Published",
+        "authors": "Jay Gurbani",
+        "feedback_link": "https://github.com/dt-alliances-workshops/learn-site-content"
+      }
+    },
+    {
+      "labslug": "azure-lab1",
+      "source": "azure-lab1",
+      "page": "docs/2-azure-lab1.md",
+      "id": "azure-lab1",
+      "title": "Azure Workshop Lab 1 - OneAgent Observability",
+      "total_minutes": 44,
+      "image_count": 37,
+      "flags": [
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "\ud83d\udca5A real-world scenario would often start with the ",
+          "line": 22
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "`Additional Ways to deploy OneAgent`",
+          "line": 34
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "\ud83d\udc4d `How this helps`",
+          "line": 109
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "\ud83d\udc4d `How this helps`",
+          "line": 134
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "\ud83d\udc4d `How this helps`",
+          "line": 169
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "\ud83d\udcd3`Dynatrace and containers`",
+          "line": 193
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "\ud83d\udc4d `How this helps`",
+          "line": 227
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "\ud83d\udc4d `How this helps`",
+          "line": 257
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "\ud83d\udc4d How this helps",
+          "line": 295
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "\ud83d\udcd3 If you click on any of the rows in the backtrace",
+          "line": 311
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "\ud83d\udc4d How this helps",
+          "line": 332
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "\ud83d\udc4d How this helps",
+          "line": 366
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 setup') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-setup.png",
+          "line": 19
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 dynatrace hub') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-dynatrace-hub.png",
+          "line": 47
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 deploy dynatrace') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-deploy-dynatrace.png",
+          "line": 50
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 download dynatrace') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-download-dynatrace.png",
+          "line": 52
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 install dynatrace') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-install-dynatrace.png",
+          "line": 58
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 deployment status') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-deployment-status.png",
+          "line": 73
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 azure find vm') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-azure-find-vm.png",
+          "line": 86
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 azure get public ip') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-azure-get-public-ip.png",
+          "line": 88
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 app') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-app.png",
+          "line": 91
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 hostlist') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-hostlist.png",
+          "line": 118
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 host view upd') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-host-view-upd.png",
+          "line": 124
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 host view proc') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-host-view-proc.png",
+          "line": 125
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 smartscape') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-smartscape.png",
+          "line": 138
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 host smartscape') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-host-smartscape.png",
+          "line": 157
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 host view proc') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-host-view-proc.png",
+          "line": 178
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 process view') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-process-view.png",
+          "line": 188
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 docker monitoring') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-docker-monitoring.png",
+          "line": 201
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 pick service') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-pick-service.png",
+          "line": 213
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 service view') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-service-view.png",
+          "line": 218
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 pick monolith mz') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-pick-monolith-mz.png",
+          "line": 234
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 trans services') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-trans-services.png",
+          "line": 236
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 top web requests') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-top-web-requests.png",
+          "line": 239
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 dynamic requests chart') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-dynamic-requests-chart.png",
+          "line": 241
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 top web request list') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-top-web-request-list.png",
+          "line": 243
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 resp time filter') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-resp-time-filter.png",
+          "line": 245
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 navigate to frontend upd') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-navigate-to-frontend-upd.png",
+          "line": 264
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 service flow arrow upd') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-service-flow-arrow-upd.png",
+          "line": 266
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 service flow') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-service-flow.png",
+          "line": 272
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 service flow tp') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-service-flow-tp.png",
+          "line": 281
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 trans services db') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-trans-services-db.png",
+          "line": 303
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 service backtrace arrow upd') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-service-backtrace-arrow-upd.png",
+          "line": 305
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 service backtrace arrows') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-service-backtrace-arrows.png",
+          "line": 313
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 pick db upd') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-pick-db-upd.png",
+          "line": 342
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 database upd') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-database-upd.png",
+          "line": 350
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 technology demo') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-technology-demo.png",
+          "line": 363
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 technology') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-technology.png",
+          "line": 374
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 mz filter off') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-mz-filter-off.png",
+          "line": 376
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab1 technology filter') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab1/lab1-technology-filter.png",
+          "line": 378
+        },
+        {
+          "section": "env",
+          "message": "References a cloud account/portal ('azure portal'); confirm docs-first wording (learner uses their own account).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "screenshot",
+          "message": "Run this lab and verify its 37 screenshots are current (technical-accuracy gate).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "judgment",
+          "message": "Confirm this lab still belongs in the migrated workshop.",
+          "locator": "",
+          "line": 0
+        }
+      ],
+      "metadata": {
+        "summary": "Lab 1 Dynatrace Workshop on Azure",
+        "id": "azure-lab1",
+        "categories": "gen2,all",
+        "tags": "azure-gen2",
+        "status": "Published",
+        "authors": "Jay Gurbani",
+        "feedback_link": "https://github.com/dt-alliances-workshops/learn-site-content"
+      }
+    },
+    {
+      "labslug": "azure-lab2",
+      "source": "azure-lab2",
+      "page": "docs/3-azure-lab2.md",
+      "id": "azure-lab2",
+      "title": "Azure Workshop Lab 2 - Modernization with AKS",
+      "total_minutes": 45,
+      "image_count": 25,
+      "flags": [
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "### \ud83d\udcd3 Beyond the Lab",
+          "line": 53
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "**\ud83d\udcd3`Shell Script to deploy sample app to Kubernete",
+          "line": 141
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "**\ud83d\udcd3 `Sample App YAML file for deploymenent`**",
+          "line": 157
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "**\ud83d\udcd3 `Kubernetes Role Binding`**",
+          "line": 198
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "**\ud83d\udc4d How this helps**",
+          "line": 368
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "**\ud83d\udc4d How this helps**",
+          "line": 429
+        },
+        {
+          "section": "blocking",
+          "message": "Stale internal CLaaT link (points at the discarded /codelabs/ site) \u2014 repoint to the migrated lab page.",
+          "locator": "visioned` correctly!",
+          "line": 62
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 app architecture') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab4-app-architecture.png",
+          "line": 26
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 setup') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab2-setup.png",
+          "line": 30
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 app architecture future') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab4-app-architecture-future.png",
+          "line": 56
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 operator menu') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab4-operator-menu.png",
+          "line": 77
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 operator mod may2022') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab4-operator-mod-may2022.jpg",
+          "line": 83
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 k8s namespaces') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab2-k8s-namespaces.png",
+          "line": 237
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 app ip') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab4-app-ip.png",
+          "line": 272
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 k8s layers upd') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab2-k8s-layers-upd.png",
+          "line": 315
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 aks nodeutiliz') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab2-aks-nodeutiliz.png",
+          "line": 321
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 aks namespace upd') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab2-aks-namespace-upd.png",
+          "line": 325
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 aks staging filter') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab2-aks-staging-filter.png",
+          "line": 329
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('la2 aks kubeworkload') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/la2-aks-kubeworkload.png",
+          "line": 333
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 aks frontend workload') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab2-aks-frontend-workload.png",
+          "line": 336
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 aks pod') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab2-aks-pod.png",
+          "line": 340
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 aks container') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab2-aks-container.png",
+          "line": 348
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('aks layer7 service upd') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/aks-layer7-service-upd.png",
+          "line": 354
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 step8 services') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab2-step8-services.png",
+          "line": 375
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 k8 mgmtzone filter') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab4-k8-mgmtzone-filter.png",
+          "line": 377
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 k8 service filter') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab4-k8-service-filter.png",
+          "line": 379
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 k8 service view mod') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab2-k8-service-view-mod.png",
+          "line": 382
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 k8 service backflow') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab4-k8-service-backflow.png",
+          "line": 392
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 step8 services') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab2-step8-services.png",
+          "line": 401
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 k8 mgmtzone filter') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab4-k8-mgmtzone-filter.png",
+          "line": 403
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 k8 frontendservice filter') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab4-k8-frontendservice-filter.png",
+          "line": 405
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 serviceflow') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab2-serviceflow.png",
+          "line": 407
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 serviceflow responsetime') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab4-serviceflow-responsetime.png",
+          "line": 415
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 serviceflow thoroughput') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab2/lab4-serviceflow-thoroughput.png",
+          "line": 422
+        },
+        {
+          "section": "screenshot",
+          "message": "Run this lab and verify its 25 screenshots are current (technical-accuracy gate).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "judgment",
+          "message": "Confirm this lab still belongs in the migrated workshop.",
+          "locator": "",
+          "line": 0
+        }
+      ],
+      "metadata": {
+        "summary": "Lab 2 Dynatrace Workshop on Azure",
+        "id": "azure-lab2",
+        "categories": "gen2,all",
+        "tags": "azure-gen2",
+        "status": "Published",
+        "authors": "Jay Gurbani",
+        "feedback_link": "https://github.com/dt-alliances-workshops/learn-site-content"
+      }
+    },
+    {
+      "labslug": "azure-lab3",
+      "source": "azure-lab3",
+      "page": "docs/4-azure-lab3.md",
+      "id": "azure-lab3",
+      "title": "Azure Workshop Lab 3 - Davis AI",
+      "total_minutes": 28,
+      "image_count": 19,
+      "flags": [
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "**\ud83d\udc4d How this helps**",
+          "line": 45
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "**\ud83d\udcd3 Why does the problem card say 'Custom Threshol",
+          "line": 193
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab3 pipeline') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab3/lab3-pipeline.png",
+          "line": 27
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab3 problemcard events') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab3/lab3-problemcard-events.png",
+          "line": 38
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab3 event examples') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab3/lab3-event-examples.png",
+          "line": 42
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab3 tags') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab3/lab3-tags.png",
+          "line": 56
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab3 app backend version 2') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab3/lab3-app-backend-version-2.png",
+          "line": 138
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab3 backend problem') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab3/lab3-backend-problem.png",
+          "line": 145
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab3 backend analysis upd') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab3/lab3-backend-analysis-upd.png",
+          "line": 150
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab3 backend hotspots upd') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab3/lab3-backend-hotspots-upd.png",
+          "line": 154
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab3 backend analysis trace') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab3/lab3-backend-analysis-trace.png",
+          "line": 164
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab3 backend breadcrumb') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab3/lab3-backend-breadcrumb.png",
+          "line": 168
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab3 backend problem details upd') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab3/lab3-backend-problem-details-upd.png",
+          "line": 171
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab3 global anomoly rules') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab3/lab3-global-anomoly-rules.png",
+          "line": 198
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab3 release order') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab3/lab3-release-order.png",
+          "line": 229
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab3 release order event') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab3/lab3-release-order-event.png",
+          "line": 233
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab3 app ui order version 3') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab3/lab3-app-ui-order-version-3.png",
+          "line": 238
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab3 order problem') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab3/lab3-order-problem.png",
+          "line": 246
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab3 order problem detail') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab3/lab3-order-problem-detail.png",
+          "line": 252
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab3 order menu') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab3/lab3-order-menu.png",
+          "line": 257
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab3 order problem requests upd') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab3/lab3-order-problem-requests-upd.png",
+          "line": 261
+        },
+        {
+          "section": "screenshot",
+          "message": "Run this lab and verify its 19 screenshots are current (technical-accuracy gate).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "judgment",
+          "message": "Confirm this lab still belongs in the migrated workshop.",
+          "locator": "",
+          "line": 0
+        }
+      ],
+      "metadata": {
+        "summary": "Lab 3 Dynatrace Workshop on Azure",
+        "id": "azure-lab3",
+        "categories": "gen2,all",
+        "tags": "azure-gen2",
+        "status": "Published",
+        "authors": "Jay Gurbani",
+        "feedback_link": "https://github.com/dt-alliances-workshops/learn-site-content"
+      }
+    },
+    {
+      "labslug": "azure-lab4",
+      "source": "azure-lab4",
+      "page": "docs/5-azure-lab4.md",
+      "id": "azure-lab4",
+      "title": "Azure Workshop Lab 4 - Azure Monitor",
+      "total_minutes": 14,
+      "image_count": 21,
+      "flags": [
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "**\ud83d\udc4d How this helps**",
+          "line": 70
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "\ud83d\udcbb\ud83d\udcd3 Look at the <a href=\"https://www.dynatrace.com/",
+          "line": 0
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 setup') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab4/lab4-setup.png",
+          "line": 22
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 azure dashboard') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab4/lab4-azure-dashboard.png",
+          "line": 38
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 host list') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab4/lab4-host-list.png",
+          "line": 52
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 host detail') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab4/lab4-host-detail.png",
+          "line": 62
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 alert create upd') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab4/lab4-alert-create-upd.png",
+          "line": 90
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 vm alert upd') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab4/lab4-vm-alert-upd.png",
+          "line": 95
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 dimentions key') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab4/lab4-dimentions-key.png",
+          "line": 101
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 adddimensionfilter') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab4/lab4-adddimensionfilter.png",
+          "line": 103
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 monotoringstrategy') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab4/lab4-monotoringstrategy.png",
+          "line": 105
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 advancedmodelproperties') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab4/lab4-advancedmodelproperties.png",
+          "line": 107
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 keydimensionofentity') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab4/lab4-keydimensionofentity.png",
+          "line": 112
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 resource alert eventtemplate') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab4/lab4-resource-alert-eventtemplate.png",
+          "line": 116
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 custom alert list upd') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab4/lab4-custom-alert-list-upd.png",
+          "line": 119
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 monolith vm search') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab4/lab4-monolith-vm-search.png",
+          "line": 127
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 monolith vm runcmd') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab4/lab4-monolith-vm-runcmd.png",
+          "line": 130
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 monolith vm exec runcmd') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab4/lab4-monolith-vm-exec-runcmd.png",
+          "line": 137
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 monolith vm runcmd output') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab4/lab4-monolith-vm-runcmd-output.jpg",
+          "line": 141
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 cpu upd') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab4/lab4-cpu-upd.png",
+          "line": 147
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 custom alert problems upd') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab4/lab4-custom-alert-problems-upd.png",
+          "line": 151
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 monolith vm search') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab4/lab4-monolith-vm-search.png",
+          "line": 176
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 monolith vm runcmd stop') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab4/lab4-monolith-vm-runcmd-stop.jpg",
+          "line": 185
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 monolith vm runcmd stop output') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab4/lab4-monolith-vm-runcmd-stop-output.jpg",
+          "line": 189
+        },
+        {
+          "section": "env",
+          "message": "References a cloud account/portal ('azure portal'); confirm docs-first wording (learner uses their own account).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "screenshot",
+          "message": "Run this lab and verify its 21 screenshots are current (technical-accuracy gate).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "judgment",
+          "message": "Confirm this lab still belongs in the migrated workshop.",
+          "locator": "",
+          "line": 0
+        }
+      ],
+      "metadata": {
+        "summary": "Lab 4 Dynatrace Workshop on Azure",
+        "id": "azure-lab4",
+        "categories": "gen2,all",
+        "tags": "azure-gen2",
+        "status": "Published",
+        "authors": "Jay Gurbani",
+        "feedback_link": "https://github.com/dt-alliances-workshops/learn-site-content"
+      }
+    },
+    {
+      "labslug": "azure-lab5",
+      "source": "azure-lab5",
+      "page": "docs/6-azure-lab5.md",
+      "id": "azure-lab5",
+      "title": "Azure Workshop Lab 5 - SLO's",
+      "total_minutes": 17,
+      "image_count": 9,
+      "flags": [
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "**\ud83d\udc4d How this helps**",
+          "line": 38
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 slo dashboard') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab5/lab4-slo-dashboard.png",
+          "line": 27
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 slo list') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab5/lab4-slo-list.png",
+          "line": 35
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 dashboard') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab5/lab4-dashboard.png",
+          "line": 58
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 dashboard settings upd') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab5/lab4-dashboard-settings-upd.png",
+          "line": 63
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 dashboard json') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab5/lab4-dashboard-json.png",
+          "line": 71
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 save dashboard') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab5/lab4-save-dashboard.png",
+          "line": 75
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 dashboard bread') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab5/lab4-dashboard-bread.png",
+          "line": 79
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 dashboard view') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab5/lab4-dashboard-view.png",
+          "line": 83
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 dashboard edit tile') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab5/lab4-dashboard-edit-tile.png",
+          "line": 92
+        },
+        {
+          "section": "screenshot",
+          "message": "Run this lab and verify its 9 screenshots are current (technical-accuracy gate).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "judgment",
+          "message": "Confirm this lab still belongs in the migrated workshop.",
+          "locator": "",
+          "line": 0
+        }
+      ],
+      "metadata": {
+        "summary": "Lab 5 Dynatrace Workshop on Azure",
+        "id": "azure-lab5",
+        "categories": "gen2,all",
+        "tags": "azure-gen2",
+        "status": "Published",
+        "authors": "Jay Gurbani",
+        "feedback_link": "https://github.com/dt-alliances-workshops/learn-site-content"
+      }
+    },
+    {
+      "labslug": "azure-lab6-appsec",
+      "source": "azure-lab6-appsec",
+      "page": "docs/7-azure-lab6-appsec.md",
+      "id": "azure-lab6",
+      "title": "Azure Workshop Lab 6 - AppSec",
+      "total_minutes": 35,
+      "image_count": 12,
+      "flags": [
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "\ud83d\udcd3 Alternatively we can go to Settings > Applicatio",
+          "line": 35
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "\ud83d\udcd3  In March 2022 a [critical vulnerability was dis",
+          "line": 73
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('1 1 enable appsec 1') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab6-appsec/1-1-enable-appsec-1.png",
+          "line": 30
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('1 2 enable appsec 2') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab6-appsec/1-2-enable-appsec-2.png",
+          "line": 39
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('2 1 vulnerabilities') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab6-appsec/2-1-vulnerabilities.png",
+          "line": 50
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('2 2 filter') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab6-appsec/2-2-filter.png",
+          "line": 77
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('2 3 result') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab6-appsec/2-3-result.png",
+          "line": 78
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('2 4 detail') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab6-appsec/2-4-detail.png",
+          "line": 80
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('2 5 detail 2') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab6-appsec/2-5-detail-2.png",
+          "line": 83
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('2 6 click view pg') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab6-appsec/2-6-click-view-pg.png",
+          "line": 86
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('2 7 pg details') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab6-appsec/2-7-pg-details.png",
+          "line": 88
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('2 5 click view all') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab6-appsec/2-5-click-view-all.png",
+          "line": 94
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('4 1 alerting profile') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab6-appsec/4-1-alerting-profile.png",
+          "line": 117
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('4 2 notification') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab6-appsec/4-2-notification.png",
+          "line": 130
+        },
+        {
+          "section": "blocking",
+          "message": "Stale Feedback Link (mailto:jay.gurbani@dynatrace.com) \u2014 replace with the repo feedback link.",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "screenshot",
+          "message": "Run this lab and verify its 12 screenshots are current (technical-accuracy gate).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "judgment",
+          "message": "Confirm this lab still belongs in the migrated workshop.",
+          "locator": "",
+          "line": 0
+        }
+      ],
+      "metadata": {
+        "summary": "Lab 6 Dynatrace Workshop on Azure",
+        "id": "azure-lab6",
+        "categories": "gen2,appsec,all",
+        "tags": "azure-gen2",
+        "status": "Published",
+        "authors": "Jay Gurbani",
+        "feedback_link": "mailto:jay.gurbani@dynatrace.com"
+      }
+    },
+    {
+      "labslug": "azure-lab7",
+      "source": "azure-lab7",
+      "page": "docs/8-azure-lab7.md",
+      "id": "azure-lab7",
+      "title": "Azure Workshop Lab 7 - Modernization with Containers",
+      "total_minutes": 30,
+      "image_count": 13,
+      "flags": [
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "\ud83d\udca5\ud83d\udca5\ud83d\udca5 **Notice** \ud83d\udca5\ud83d\udca5\ud83d\udca5",
+          "line": 12
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab5 picture') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab7/lab5-picture.png",
+          "line": 30
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab5 picture future') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab7/lab5-picture-future.png",
+          "line": 36
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab5 setup') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab7/lab5-setup.png",
+          "line": 46
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab5 azure find vm') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab7/lab5-azure-find-vm.png",
+          "line": 77
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab5 azure get public ip') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab7/lab5-azure-get-public-ip.png",
+          "line": 81
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab5 app') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab7/lab5-app.png",
+          "line": 88
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab5 trans services') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab7/lab5-trans-services.png",
+          "line": 95
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab5 service flow arrow') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab7/lab5-service-flow-arrow.png",
+          "line": 103
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab5 service flow') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab7/lab5-service-flow.png",
+          "line": 115
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab5 service flow tp') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab7/lab5-service-flow-tp.png",
+          "line": 123
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab5 service list catalog') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab7/lab5-service-list-catalog.png",
+          "line": 138
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab5 service backtrace arrow') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab7/lab5-service-backtrace-arrow.png",
+          "line": 142
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab5 backtrace detail') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab7/lab5-backtrace-detail.png",
+          "line": 151
+        },
+        {
+          "section": "env",
+          "message": "References a cloud account/portal ('subscription'); confirm docs-first wording (learner uses their own account).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "screenshot",
+          "message": "Run this lab and verify its 13 screenshots are current (technical-accuracy gate).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "judgment",
+          "message": "Confirm this lab still belongs in the migrated workshop.",
+          "locator": "",
+          "line": 0
+        }
+      ],
+      "metadata": {
+        "summary": "Lab 7 Dynatrace Workshop on Azure",
+        "id": "azure-lab7",
+        "categories": "gen2,all",
+        "tags": "azure-gen2",
+        "status": "Published",
+        "authors": "Jay Gurbani",
+        "feedback_link": "https://github.com/dt-alliances-workshops/learn-site-content"
+      }
+    },
+    {
+      "labslug": "azure-lab8-cleanup",
+      "source": "azure-lab8-cleanup",
+      "page": "docs/9-azure-lab8-cleanup.md",
+      "id": "azure-lab8",
+      "title": "Azure Workshop Lab 8 - Reminder & Cleanup",
+      "total_minutes": 0,
+      "image_count": 0,
+      "flags": [
+        {
+          "section": "blocking",
+          "message": "Stale Feedback Link (mailto:jay.gurbani@dynatrace.com) \u2014 replace with the repo feedback link.",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "env",
+          "message": "References a cloud account/portal ('subscription'); confirm docs-first wording (learner uses their own account).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "screenshot",
+          "message": "Run this lab and verify its 0 screenshots are current (technical-accuracy gate).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "judgment",
+          "message": "Confirm this lab still belongs in the migrated workshop.",
+          "locator": "",
+          "line": 0
+        }
+      ],
+      "metadata": {
+        "summary": "Lab 10 Dynatrace Workshop on Azure",
+        "id": "azure-lab8",
+        "categories": "modernization,kubernetes,grail,all",
+        "tags": "azure,grail",
+        "status": "Published",
+        "authors": "Jay Gurbani",
+        "feedback_link": "mailto:jay.gurbani@dynatrace.com"
+      }
+    },
+    {
+      "labslug": "azure-lab11-setips",
+      "source": "azure-lab11-setips",
+      "page": "docs/10-azure-lab11-setips.md",
+      "id": "azure-lab11",
+      "title": "Azure Workshop - SE Delivery Notes",
+      "total_minutes": 0,
+      "image_count": 1,
+      "flags": [
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "\ud83d\udca1  This is a known issue with aks-preview extensio",
+          "line": 92
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('akserror') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab11-setips/akserror.png",
+          "line": 87
+        },
+        {
+          "section": "blocking",
+          "message": "Stale Feedback Link (mailto:jay.gurbani@dynatrace.com) \u2014 replace with the repo feedback link.",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "env",
+          "message": "References a cloud account/portal ('azure portal'); confirm docs-first wording (learner uses their own account).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "screenshot",
+          "message": "Run this lab and verify its 1 screenshots are current (technical-accuracy gate).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "judgment",
+          "message": "Confirm this lab still belongs in the migrated workshop.",
+          "locator": "",
+          "line": 0
+        }
+      ],
+      "metadata": {
+        "summary": "Lab 11 Dynatrace Workshop on Azure",
+        "id": "azure-lab11",
+        "categories": "",
+        "tags": "",
+        "status": "Hidden",
+        "authors": "Jay Gurbani",
+        "feedback_link": "mailto:jay.gurbani@dynatrace.com"
+      }
+    },
+    {
+      "labslug": "azure-lab-intro",
+      "source": "azure-lab-intro",
+      "page": "docs/11-azure-lab-intro.md",
+      "id": "azure-intro",
+      "title": "Azure Workshop Introduction",
+      "total_minutes": 27,
+      "image_count": 2,
+      "flags": [
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('dt azure') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab-intro/dt-azure.png",
+          "line": 3
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('azure cloud adoption') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-lab-intro/azure-cloud-adoption.png",
+          "line": 158
+        },
+        {
+          "section": "blocking",
+          "message": "Stale Feedback Link (https://github.com/dt-alliances-workshops/workshops-content) \u2014 replace with the repo feedback link.",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "env",
+          "message": "References a cloud account/portal ('azure pass'); confirm docs-first wording (learner uses their own account).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "screenshot",
+          "message": "Run this lab and verify its 2 screenshots are current (technical-accuracy gate).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "judgment",
+          "message": "Confirm this lab still belongs in the migrated workshop.",
+          "locator": "",
+          "line": 0
+        }
+      ],
+      "metadata": {
+        "summary": "Dynatrace Workshop on Azure  Introduction",
+        "id": "azure-intro",
+        "categories": "modernization, kubernetes",
+        "tags": "azure",
+        "status": "Hidden",
+        "authors": "Jay Gurbani",
+        "feedback_link": "https://github.com/dt-alliances-workshops/workshops-content"
+      }
+    }
+  ]
+}

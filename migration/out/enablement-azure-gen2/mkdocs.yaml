@@ -1,0 +1,21 @@
+INHERIT: mkdocs-base.yaml
+
+site_name: "Dynatrace Enablement Lab: Azure Gen2"
+repo_name: "View Code on GitHub"
+repo_url: "https://github.com/dynatrace-wwse/enablement-azure-gen2"
+nav:
+  - "Welcome": index.md
+  - "1. Azure Workshop Lab 0 - Setup": 1-azure-lab0-prereq.md
+  - "2. Azure Workshop Lab 1 - OneAgent Observability": 2-azure-lab1.md
+  - "3. Azure Workshop Lab 2 - Modernization with AKS": 3-azure-lab2.md
+  - "4. Azure Workshop Lab 3 - Davis AI": 4-azure-lab3.md
+  - "5. Azure Workshop Lab 4 - Azure Monitor": 5-azure-lab4.md
+  - "6. Azure Workshop Lab 5 - SLO's": 6-azure-lab5.md
+  - "7. Azure Workshop Lab 6 - AppSec": 7-azure-lab6-appsec.md
+  - "8. Azure Workshop Lab 7 - Modernization with Containers": 8-azure-lab7.md
+  - "9. Azure Workshop Lab 8 - Reminder & Cleanup": 9-azure-lab8-cleanup.md
+  - "10. Azure Workshop - SE Delivery Notes": 10-azure-lab11-setips.md
+  - "11. Azure Workshop Introduction": 11-azure-lab-intro.md
+
+extra:
+  rum_snippet: ""  # TODO: paste this repo's Dynatrace RUM snippet before go-live

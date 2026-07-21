@@ -1,0 +1,566 @@
+{
+  "repo": "enablement-azure-aks-levelup",
+  "workshop": "azure-aks-levelup",
+  "labs": [
+    {
+      "labslug": "azure-aks-levelup-lab0",
+      "source": "azure-aks-levelup-lab0",
+      "page": "docs/1-azure-aks-levelup-lab0.md",
+      "id": "azure-aks-levelup-lab0",
+      "title": "Azure AKS Levelup Workshop Lab 0 - Setup",
+      "total_minutes": 36,
+      "image_count": 30,
+      "flags": [
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "Creating the storage will take a couple of minutes",
+          "line": 100
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "\ud83d\udca1To login to Dynatrace you use \"Sign in with Micro",
+          "line": 199
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "\ud83d\udcd3 Only proceed if the provisioning script complete",
+          "line": 379
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup azure') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/setup-azure.png",
+          "line": 27
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('azure pass signin') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/azure-pass-signin.png",
+          "line": 29
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup ms account') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/setup-ms-account.png",
+          "line": 33
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('azure pass emailconfirm') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/azure-pass-emailconfirm.png",
+          "line": 36
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('az marketplace') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/az-marketplace.png",
+          "line": 55
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('ands') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/ands.png",
+          "line": 58
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('ands subscribe') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/ands-subscribe.png",
+          "line": 60
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('ands create') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/ands-create.png",
+          "line": 63
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('ands create basics 1') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/ands-create-basics-1.png",
+          "line": 71
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('Lab0 Step4 ands validate') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/Lab0-Step4-ands-validate.png",
+          "line": 73
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('ands create complete') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/ands-create-complete.png",
+          "line": 75
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup azure shell open') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/setup-azure-shell-open.png",
+          "line": 84
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup azure shell bash') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/setup-azure-shell-bash.png",
+          "line": 90
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup azure shell storage') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/setup-azure-shell-storage.png",
+          "line": 96
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup azure shell prompt') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/setup-azure-shell-prompt.png",
+          "line": 103
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup azure shell newtab') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/setup-azure-shell-newtab.png",
+          "line": 106
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('pre requisites azure cli gitcloneoutput') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/pre-requisites-azure-cli-gitcloneoutput.png",
+          "line": 174
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('Lab0 Step4 ands search') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/Lab0-Step4-ands-search.png",
+          "line": 192
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('Lab0 Step5 ands gotodt') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/Lab0-Step5-ands-gotodt.png",
+          "line": 194
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab0 loginwithMS') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/lab0-loginwithMS.png",
+          "line": 200
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab0 loginwithMS 1') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/lab0-loginwithMS-1.png",
+          "line": 204
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab0 newUI access banner') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/lab0-newUI-access-banner.png",
+          "line": 209
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab0 newUI try latest dt') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/lab0-newUI-try-latest-dt.png",
+          "line": 211
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab0 newUI main') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/lab0-newUI-main.png",
+          "line": 215
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('dt access token') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/dt-access-token.png",
+          "line": 226
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('dt tokens page save') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/dt-tokens-page-save.png",
+          "line": 237
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('pre requisites azure portal resources') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/pre-requisites-azure-portal-resources.png",
+          "line": 392
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('pre requisites azure portal resources resourcelist') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/pre-requisites-azure-portal-resources-resourcelist.png",
+          "line": 395
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup k8') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/setup-k8.png",
+          "line": 450
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('setup k8 node') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab0/setup-k8-node.png",
+          "line": 454
+        },
+        {
+          "section": "blocking",
+          "message": "Stale Feedback Link (https://github.com/dt-alliances-workshops/workshops-content) \u2014 replace with the repo feedback link.",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "env",
+          "message": "References a cloud account/portal ('azure portal'); confirm docs-first wording (learner uses their own account).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "screenshot",
+          "message": "Run this lab and verify its 30 screenshots are current (technical-accuracy gate).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "judgment",
+          "message": "Confirm this lab still belongs in the migrated workshop.",
+          "locator": "",
+          "line": 0
+        }
+      ],
+      "metadata": {
+        "summary": "Dynatrace Workshop on Azure AKS Levelup Introduction - Lab0",
+        "id": "azure-aks-levelup-lab0",
+        "categories": "aks, all",
+        "tags": "aks",
+        "status": "Hidden",
+        "authors": "Jay Gurbani",
+        "feedback_link": "https://github.com/dt-alliances-workshops/workshops-content"
+      }
+    },
+    {
+      "labslug": "azure-aks-levelup-lab1",
+      "source": "azure-aks-levelup-lab1",
+      "page": "docs/2-azure-aks-levelup-lab1.md",
+      "id": "azure-aks-levelup-lab1",
+      "title": "Azure AKS Levelup Workshop Lab 1 - Dynatrace Observability for AKS",
+      "total_minutes": 40,
+      "image_count": 21,
+      "flags": [
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "### \ud83d\udcd3 Beyond the Lab",
+          "line": 40
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "This step is only visible for demonstration.  ",
+          "line": 48
+        },
+        {
+          "section": "blocking",
+          "message": "Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.",
+          "locator": "Bring up the notepad where you save off the values",
+          "line": 82
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 app architecture') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab1/lab4-app-architecture.png",
+          "line": 19
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 setup') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab1/lab2-setup.png",
+          "line": 23
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab4 app architecture future') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab1/lab4-app-architecture-future.png",
+          "line": 43
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 aks search') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab1/lab2-aks-search.png",
+          "line": 65
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 aks dt extension install1') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab1/lab2-aks-dt-extension-install1.png",
+          "line": 70
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 aks dt extension install2') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab1/lab2-aks-dt-extension-install2.png",
+          "line": 73
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 aks dt extension install3') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab1/lab2-aks-dt-extension-install3.png",
+          "line": 78
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 aks dt extension install4') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab1/lab2-aks-dt-extension-install4.png",
+          "line": 93
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 aks dt extension install5') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab1/lab2-aks-dt-extension-install5.png",
+          "line": 98
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('akslevelup lab1 k8app') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab1/akslevelup-lab1-k8app.png",
+          "line": 114
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('akslevelup lab1 k8app explorer') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab1/akslevelup-lab1-k8app-explorer.png",
+          "line": 116
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('akslevelup lab1 k8app explorer') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab1/akslevelup-lab1-k8app-explorer.png",
+          "line": 119
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('akslevelup lab1 k8app rednodes') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab1/akslevelup-lab1-k8app-rednodes.png",
+          "line": 125
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('akslevelup lab1 k8app rednode detail') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab1/akslevelup-lab1-k8app-rednode-detail.png",
+          "line": 126
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('akslevelup lab1 k8app rednode problem detail') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab1/akslevelup-lab1-k8app-rednode-problem-detail.png",
+          "line": 129
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('akslevelup lab1 k8app rednode event detail') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab1/akslevelup-lab1-k8app-rednode-event-detail.png",
+          "line": 131
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('akslevelup lab1 k8app rednode info detail') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab1/akslevelup-lab1-k8app-rednode-info-detail.png",
+          "line": 133
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('akslevelup lab1 k8app cluster workloads') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab1/akslevelup-lab1-k8app-cluster-workloads.png",
+          "line": 144
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('akslevelup lab1 k8app healthyfilter') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab1/akslevelup-lab1-k8app-healthyfilter.gif",
+          "line": 146
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('akslevelup lab1 k8app cluster workloadslist') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab1/akslevelup-lab1-k8app-cluster-workloadslist.png",
+          "line": 148
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('akslevelup lab1 k8app cluster workloadcheckout') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab1/akslevelup-lab1-k8app-cluster-workloadcheckout.png",
+          "line": 150
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('akslevelup lab1 k8app notebook limitsdql') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab1/akslevelup-lab1-k8app-notebook-limitsdql.gif",
+          "line": 174
+        },
+        {
+          "section": "blocking",
+          "message": "Stale Feedback Link (https://github.com/dt-alliances-workshops/workshops-content) \u2014 replace with the repo feedback link.",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "env",
+          "message": "References a cloud account/portal ('azure portal'); confirm docs-first wording (learner uses their own account).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "screenshot",
+          "message": "Run this lab and verify its 21 screenshots are current (technical-accuracy gate).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "judgment",
+          "message": "Confirm this lab still belongs in the migrated workshop.",
+          "locator": "",
+          "line": 0
+        }
+      ],
+      "metadata": {
+        "summary": "Dynatrace Workshop on Azure AKS Levelup - Lab1",
+        "id": "azure-aks-levelup-lab1",
+        "categories": "aks, all",
+        "tags": "aks",
+        "status": "Published",
+        "authors": "Jay Gurbani",
+        "feedback_link": "https://github.com/dt-alliances-workshops/workshops-content"
+      }
+    },
+    {
+      "labslug": "azure-aks-levelup-lab2",
+      "source": "azure-aks-levelup-lab2",
+      "page": "docs/3-azure-aks-levelup-lab2.md",
+      "id": "azure-aks-levelup-lab2",
+      "title": "Azure AKS Levelup Workshop Lab 2 - Application Obervability & Security for AKS",
+      "total_minutes": 25,
+      "image_count": 8,
+      "flags": [
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('lab2 davis chart') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab2/lab2-davis-chart.png",
+          "line": 25
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('akslevelup lab1 k8app cluster workloads') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab2/akslevelup-lab1-k8app-cluster-workloads.png",
+          "line": 31
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('akslevelup lab2 k8app order service workload error') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab2/akslevelup-lab2-k8app-order-service-workload-error.png",
+          "line": 34
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('akslevelup lab2 k8app order service') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab2/akslevelup-lab2-k8app-order-service.png",
+          "line": 36
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('akslevelup lab1 k8app') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab2/akslevelup-lab1-k8app.png",
+          "line": 58
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('akslevelup lab2 k8app cluster vuln') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab2/akslevelup-lab2-k8app-cluster-vuln.png",
+          "line": 61
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('akslevelup lab2 k8app vulnerability filter') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab2/akslevelup-lab2-k8app-vulnerability-filter.gif",
+          "line": 63
+        },
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('akslevelup lab2 vuln details') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab2/akslevelup-lab2-vuln-details.png",
+          "line": 65
+        },
+        {
+          "section": "screenshot",
+          "message": "Run this lab and verify its 8 screenshots are current (technical-accuracy gate).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "judgment",
+          "message": "Confirm this lab still belongs in the migrated workshop.",
+          "locator": "",
+          "line": 0
+        }
+      ],
+      "metadata": {
+        "summary": "Dynatrace Workshop on Azure AKS Levelup - Lab2",
+        "id": "azure-aks-levelup-lab2",
+        "categories": "aks, all",
+        "tags": "aks",
+        "status": "Published",
+        "authors": "Jay Gurbani",
+        "feedback_link": "https://github.com/dt-alliances-workshops/learn-site-content"
+      }
+    },
+    {
+      "labslug": "azure-aks-levelup-lab3",
+      "source": "azure-aks-levelup-lab3",
+      "page": "docs/4-azure-aks-levelup-lab3.md",
+      "id": "azure-aks-levelup-lab3",
+      "title": "Azure Workshop Lab 3 - Reminder",
+      "total_minutes": 5,
+      "image_count": 1,
+      "flags": [
+        {
+          "section": "alt",
+          "message": "Alt text auto-derived ('dynatrace plans free trial') \u2014 confirm it reads sensibly.",
+          "locator": "img/azure-aks-levelup-lab3/dynatrace-plans-free-trial.png",
+          "line": 11
+        },
+        {
+          "section": "blocking",
+          "message": "Stale Feedback Link (mailto:jay.gurbani@dynatrace.com) \u2014 replace with the repo feedback link.",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "screenshot",
+          "message": "Run this lab and verify its 1 screenshots are current (technical-accuracy gate).",
+          "locator": "",
+          "line": 0
+        },
+        {
+          "section": "judgment",
+          "message": "Confirm this lab still belongs in the migrated workshop.",
+          "locator": "",
+          "line": 0
+        }
+      ],
+      "metadata": {
+        "summary": "Dynatrace Workshop on Azure AKS Levelup - Lab3",
+        "id": "azure-aks-levelup-lab3",
+        "categories": "aks, all",
+        "tags": "aks",
+        "status": "Published",
+        "authors": "Jay Gurbani",
+        "feedback_link": "mailto:jay.gurbani@dynatrace.com"
+      }
+    }
+  ]
+}

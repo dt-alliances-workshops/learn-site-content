@@ -1,0 +1,14 @@
+INHERIT: mkdocs-base.yaml
+
+site_name: "Dynatrace Enablement Lab: Azure AKS LevelUp"
+repo_name: "View Code on GitHub"
+repo_url: "https://github.com/dynatrace-wwse/enablement-azure-aks-levelup"
+nav:
+  - "Welcome": index.md
+  - "1. Azure AKS Levelup Workshop Lab 0 - Setup": 1-azure-aks-levelup-lab0.md
+  - "2. Azure AKS Levelup Workshop Lab 1 - Dynatrace Observability for AKS": 2-azure-aks-levelup-lab1.md
+  - "3. Azure AKS Levelup Workshop Lab 2 - Application Obervability & Security for AKS": 3-azure-aks-levelup-lab2.md
+  - "4. Azure Workshop Lab 3 - Reminder": 4-azure-aks-levelup-lab3.md
+
+extra:
+  rum_snippet: ""  # TODO: paste this repo's Dynatrace RUM snippet before go-live

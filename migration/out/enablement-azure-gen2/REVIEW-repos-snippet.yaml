@@ -1,0 +1,9 @@
+  - name: enablement-azure-gen2
+    repo: dynatrace-wwse/enablement-azure-gen2
+    status: active
+    maintainer: "@TODO"
+    description: "TODO one-line description"
+    tags: [azure, modernization]
+    title: "Azure Gen2"
+    primary_tag: azure
+    duration: "3h"

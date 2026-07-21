@@ -1,0 +1,303 @@
+# Migration Review — enablement-aws-selfpaced
+
+Auto-generated. Check boxes as you resolve. The repo already passed `mkdocs build --strict` at generation.
+
+## 0. Context (read once)
+- Labs: 14  |  Total duration in source: 10 min
+- Authors carried over: none
+- Environment model: DOCS-FIRST (no cloud provisioning; prose references the learner's own cloud account).
+- Lab → page map:
+    - aws-better-together → docs/1-aws-better-together.md (id: aws-dynatrace-better-together, 15 images)
+    - aws-lab1 → docs/2-aws-lab1.md (id: aws-lab1, 32 images)
+    - aws-lab3 → docs/3-aws-lab3.md (id: aws-lab3, 3 images)
+    - aws-lab4 role → docs/4-aws-lab4-role.md (id: aws-lab4 AWS CloudWatch Integration, 32 images)
+    - aws-lab5 Davis Mono → docs/5-aws-lab5-davis-mono.md (id: aws-lab5, 24 images)
+    - aws-lab6 → docs/6-aws-lab6.md (id: aws-lab6, 11 images)
+    - aws-lab7 → docs/7-aws-lab7.md (id: aws-lab7, 20 images)
+    - aws-lab8-K8 events → docs/8-aws-lab8-k8-events.md (id: aws-lab8, 6 images)
+    - aws-lab9 Davis K8 → docs/9-aws-lab9-davis-k8.md (id: aws-lab9, 14 images)
+    - aws-lab10-appsec → docs/10-aws-lab10-appsec.md (id: aws-lab10, 11 images)
+    - aws-lab11-serverless → docs/11-aws-lab11-serverless.md (id: aws-lab11-serverless-setup, 12 images)
+    - aws-lab12-serverless observability → docs/12-aws-lab12-serverless-observability.md (id: aws-lab12-serverless observability, 14 images)
+    - aws-lab cleanup → docs/13-aws-lab-cleanup.md (id: aws-lab cleanup, 0 images)
+    - aws-selfpaced → docs/14-aws-selfpaced.md (id: aws-selfpaced, 21 images)
+
+## 1. Blocking — must resolve before committing the branch  (4 items)
+- [ ] docs/7-aws-lab7.md:234 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/7-aws-lab7.md:295 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/10-aws-lab10-appsec.md:37 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/10-aws-lab10-appsec.md:89 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+
+## 2. Environment (cloud-account prose) — confirm docs-first wording  (7 items)
+- [ ] docs/2-aws-lab1.md — References a cloud account/portal ('aws console'); confirm docs-first wording (learner uses their own account).
+- [ ] docs/4-aws-lab4-role.md — References a cloud account/portal ('aws console'); confirm docs-first wording (learner uses their own account).
+- [ ] docs/6-aws-lab6.md — References a cloud account/portal ('aws console'); confirm docs-first wording (learner uses their own account).
+- [ ] docs/11-aws-lab11-serverless.md — References a cloud account/portal ('aws console'); confirm docs-first wording (learner uses their own account).
+- [ ] docs/12-aws-lab12-serverless-observability.md — References a cloud account/portal ('aws console'); confirm docs-first wording (learner uses their own account).
+- [ ] docs/13-aws-lab-cleanup.md — References a cloud account/portal ('aws console'); confirm docs-first wording (learner uses their own account).
+- [ ] docs/14-aws-selfpaced.md — References a cloud account/portal ('aws console'); confirm docs-first wording (learner uses their own account).
+
+## 3. Run & re-capture (validates technical accuracy)  (14 items)
+- [ ] docs/1-aws-better-together.md — Run this lab and verify its 15 screenshots are current (technical-accuracy gate).
+- [ ] docs/2-aws-lab1.md — Run this lab and verify its 32 screenshots are current (technical-accuracy gate).
+- [ ] docs/3-aws-lab3.md — Run this lab and verify its 3 screenshots are current (technical-accuracy gate).
+- [ ] docs/4-aws-lab4-role.md — Run this lab and verify its 32 screenshots are current (technical-accuracy gate).
+- [ ] docs/5-aws-lab5-davis-mono.md — Run this lab and verify its 24 screenshots are current (technical-accuracy gate).
+- [ ] docs/6-aws-lab6.md — Run this lab and verify its 11 screenshots are current (technical-accuracy gate).
+- [ ] docs/7-aws-lab7.md — Run this lab and verify its 20 screenshots are current (technical-accuracy gate).
+- [ ] docs/8-aws-lab8-k8-events.md — Run this lab and verify its 6 screenshots are current (technical-accuracy gate).
+- [ ] docs/9-aws-lab9-davis-k8.md — Run this lab and verify its 14 screenshots are current (technical-accuracy gate).
+- [ ] docs/10-aws-lab10-appsec.md — Run this lab and verify its 11 screenshots are current (technical-accuracy gate).
+- [ ] docs/11-aws-lab11-serverless.md — Run this lab and verify its 12 screenshots are current (technical-accuracy gate).
+- [ ] docs/12-aws-lab12-serverless-observability.md — Run this lab and verify its 14 screenshots are current (technical-accuracy gate).
+- [ ] docs/13-aws-lab-cleanup.md — Run this lab and verify its 0 screenshots are current (technical-accuracy gate).
+- [ ] docs/14-aws-selfpaced.md — Run this lab and verify its 21 screenshots are current (technical-accuracy gate).
+
+## 4. Alt-text review (batch-approvable)  (225 items)
+- [ ] docs/1-aws-better-together.md:48 — Alt text auto-derived ('cloud migration strategies new') — confirm it reads sensibly.
+- [ ] docs/1-aws-better-together.md:133 — Alt text auto-derived ('cloud framework new') — confirm it reads sensibly.
+- [ ] docs/1-aws-better-together.md:147 — Alt text auto-derived ('dt agent') — confirm it reads sensibly.
+- [ ] docs/1-aws-better-together.md:151 — Alt text auto-derived ('dt smartscape words') — confirm it reads sensibly.
+- [ ] docs/1-aws-better-together.md:159 — Alt text auto-derived ('dt usage dashboard') — confirm it reads sensibly.
+- [ ] docs/1-aws-better-together.md:163 — Alt text auto-derived ('dt network flow') — confirm it reads sensibly.
+- [ ] docs/1-aws-better-together.md:173 — Alt text auto-derived ('dt move server') — confirm it reads sensibly.
+- [ ] docs/1-aws-better-together.md:179 — Alt text auto-derived ('dt flow') — confirm it reads sensibly.
+- [ ] docs/1-aws-better-together.md:183 — Alt text auto-derived ('dt scale') — confirm it reads sensibly.
+- [ ] docs/1-aws-better-together.md:189 — Alt text auto-derived ('dt b4 after') — confirm it reads sensibly.
+- [ ] docs/1-aws-better-together.md:193 — Alt text auto-derived ('dt review') — confirm it reads sensibly.
+- [ ] docs/1-aws-better-together.md:197 — Alt text auto-derived ('dt k8') — confirm it reads sensibly.
+- [ ] docs/1-aws-better-together.md:209 — Alt text auto-derived ('dt how works') — confirm it reads sensibly.
+- [ ] docs/1-aws-better-together.md:227 — Alt text auto-derived ('dt problem view') — confirm it reads sensibly.
+- [ ] docs/1-aws-better-together.md:245 — Alt text auto-derived ('dt intregration') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:25 — Alt text auto-derived ('lab1 setup') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:55 — Alt text auto-derived ('setup mono ip address') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:61 — Alt text auto-derived ('lab1 app') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:88 — Alt text auto-derived ('lab1 deployment status') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:94 — Alt text auto-derived ('lab1 host view') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:103 — Alt text auto-derived ('lab1 host view') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:115 — Alt text auto-derived ('lab1 smartscape') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:136 — Alt text auto-derived ('lab1 host smartscape') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:156 — Alt text auto-derived ('lab1 host process') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:167 — Alt text auto-derived ('lab1 process view') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:181 — Alt text auto-derived ('lab1 docker monitoring') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:198 — Alt text auto-derived ('lab1 pick service') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:208 — Alt text auto-derived ('lab1 service view') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:226 — Alt text auto-derived ('lab1 trans services') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:232 — Alt text auto-derived ('lab1 dynamic requests arrow') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:236 — Alt text auto-derived ('lab1 dynamic requests chart') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:240 — Alt text auto-derived ('lab1 dynamic requests list') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:244 — Alt text auto-derived ('lab1 request filter') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:250 — Alt text auto-derived ('lab1 analysis view button') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:254 — Alt text auto-derived ('lab1 analysis view') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:274 — Alt text auto-derived ('lab1 navigate to frontend') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:278 — Alt text auto-derived ('lab1 service flow arrow') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:289 — Alt text auto-derived ('lab1 service flow') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:300 — Alt text auto-derived ('lab1 service flow tp') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:325 — Alt text auto-derived ('lab1 trans services db') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:329 — Alt text auto-derived ('lab1 service backtrace arrow') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:342 — Alt text auto-derived ('lab1 service backtrace arrows') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:362 — Alt text auto-derived ('lab1 pick db') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:373 — Alt text auto-derived ('lab1 database') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:385 — Alt text auto-derived ('lab1 technology demo') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:395 — Alt text auto-derived ('lab1 technology') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:399 — Alt text auto-derived ('lab1 technology filter') — confirm it reads sensibly.
+- [ ] docs/2-aws-lab1.md:405 — Alt text auto-derived ('lab1 dynatrace hub') — confirm it reads sensibly.
+- [ ] docs/3-aws-lab3.md:36 — Alt text auto-derived ('lab2 slo list') — confirm it reads sensibly.
+- [ ] docs/3-aws-lab3.md:56 — Alt text auto-derived ('lab2 dashboard view') — confirm it reads sensibly.
+- [ ] docs/3-aws-lab3.md:70 — Alt text auto-derived ('lab2 dashboard edit tile') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:25 — Alt text auto-derived ('lab3 aws dashboard') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:34 — Alt text auto-derived ('lab3 host list') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:44 — Alt text auto-derived ('lab3 host detail') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:50 — Alt text auto-derived ('lab3 lambda list') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:56 — Alt text auto-derived ('lab3 preset dashboard') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:77 — Alt text auto-derived ('role1') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:86 — Alt text auto-derived ('role2') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:90 — Alt text auto-derived ('role3') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:98 — Alt text auto-derived ('role4') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:102 — Alt text auto-derived ('role5') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:108 — Alt text auto-derived ('role6') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:109 — Alt text auto-derived ('role7') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:124 — Alt text auto-derived ('role8') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:129 — Alt text auto-derived ('dt aws dashboard list') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:135 — Alt text auto-derived ('dt aws dashboard menu') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:139 — Alt text auto-derived ('dt aws dashboard blank') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:143 — Alt text auto-derived ('dt aws dashboard overview') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:145 — Alt text auto-derived ('dt aws dashboard') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:151 — Alt text auto-derived ('aws monitor list') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:155 — Alt text auto-derived ('aws monitor host') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:184 — Alt text auto-derived ('addmetricevent') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:194 — Alt text auto-derived ('dimensionkey') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:198 — Alt text auto-derived ('adddimensionfilter') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:202 — Alt text auto-derived ('monotoringstrategy') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:206 — Alt text auto-derived ('advancedmodelproperties') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:213 — Alt text auto-derived ('keydimensionofentity') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:220 — Alt text auto-derived ('eventtemplate') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:224 — Alt text auto-derived ('savedmetricevents') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:234 — Alt text auto-derived ('aws ec2 connect list') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:238 — Alt text auto-derived ('aws ec2 connect') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:279 — Alt text auto-derived ('lab4 cpu') — confirm it reads sensibly.
+- [ ] docs/4-aws-lab4-role.md:283 — Alt text auto-derived ('lab4 custom alert problems') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:25 — Alt text auto-derived ('lab3 backend problem usecase') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:29 — Alt text auto-derived ('lab3 order problem usecase') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:41 — Alt text auto-derived ('lab3 pipeline') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:54 — Alt text auto-derived ('lab3 problemcard events') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:60 — Alt text auto-derived ('lab3 event examples') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:72 — Alt text auto-derived ('lab3 tags') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:132 — Alt text auto-derived ('lab3 backend problem usecase') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:175 — Alt text auto-derived ('lab3 release backend list') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:183 — Alt text auto-derived ('lab3 app backend version 2') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:193 — Alt text auto-derived ('lab1 mz filter off') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:200 — Alt text auto-derived ('lab3 backend problem') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:210 — Alt text auto-derived ('lab3 backend analysis') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:216 — Alt text auto-derived ('lab3 backend hotspots') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:222 — Alt text auto-derived ('lab3 backend analysis trace') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:228 — Alt text auto-derived ('lab3 backend breadcrumb') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:232 — Alt text auto-derived ('lab3 backend problem details') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:251 — Alt text auto-derived ('lab3 global anomoly rules') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:265 — Alt text auto-derived ('lab3 order problem usecase') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:298 — Alt text auto-derived ('lab3 app ui order version 3') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:305 — Alt text auto-derived ('lab3 release order') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:309 — Alt text auto-derived ('lab1 mz filter off') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:313 — Alt text auto-derived ('lab3 release order event') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:324 — Alt text auto-derived ('lab3 order problem') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:332 — Alt text auto-derived ('lab3 order problem detail') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:338 — Alt text auto-derived ('lab3 order menu') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:342 — Alt text auto-derived ('lab3 order problem service') — confirm it reads sensibly.
+- [ ] docs/5-aws-lab5-davis-mono.md:346 — Alt text auto-derived ('lab3 order problem requests') — confirm it reads sensibly.
+- [ ] docs/6-aws-lab6.md:54 — Alt text auto-derived ('lab2 setup') — confirm it reads sensibly.
+- [ ] docs/6-aws-lab6.md:87 — Alt text auto-derived ('setup cloudformation search') — confirm it reads sensibly.
+- [ ] docs/6-aws-lab6.md:95 — Alt text auto-derived ('setup cloudformation stacks') — confirm it reads sensibly.
+- [ ] docs/6-aws-lab6.md:99 — Alt text auto-derived ('setup cloudformation stacks details') — confirm it reads sensibly.
+- [ ] docs/6-aws-lab6.md:107 — Alt text auto-derived ('setup stack complete') — confirm it reads sensibly.
+- [ ] docs/6-aws-lab6.md:115 — Alt text auto-derived ('setup eks cluster') — confirm it reads sensibly.
+- [ ] docs/6-aws-lab6.md:119 — Alt text auto-derived ('setup eks cluster detail') — confirm it reads sensibly.
+- [ ] docs/6-aws-lab6.md:186 — Alt text auto-derived ('lab4 operator menu') — confirm it reads sensibly.
+- [ ] docs/6-aws-lab6.md:194 — Alt text auto-derived ('lab4 operator new') — confirm it reads sensibly.
+- [ ] docs/6-aws-lab6.md:253 — Alt text auto-derived ('mz pick all') — confirm it reads sensibly.
+- [ ] docs/6-aws-lab6.md:257 — Alt text auto-derived ('lab2 eks hosts') — confirm it reads sensibly.
+- [ ] docs/7-aws-lab7.md:105 — Alt text auto-derived ('lab2 k8s namespaces') — confirm it reads sensibly.
+- [ ] docs/7-aws-lab7.md:182 — Alt text auto-derived ('lab2 k8s layers') — confirm it reads sensibly.
+- [ ] docs/7-aws-lab7.md:188 — Alt text auto-derived ('lab4 aks nodeutiliz') — confirm it reads sensibly.
+- [ ] docs/7-aws-lab7.md:193 — Alt text auto-derived ('lab4 aks workload') — confirm it reads sensibly.
+- [ ] docs/7-aws-lab7.md:195 — Alt text auto-derived ('lab4 aks workload filter') — confirm it reads sensibly.
+- [ ] docs/7-aws-lab7.md:199 — Alt text auto-derived ('la4 aks kubeworkload') — confirm it reads sensibly.
+- [ ] docs/7-aws-lab7.md:202 — Alt text auto-derived ('lab4 aks frontend workload') — confirm it reads sensibly.
+- [ ] docs/7-aws-lab7.md:206 — Alt text auto-derived ('lab4 aks pod') — confirm it reads sensibly.
+- [ ] docs/7-aws-lab7.md:214 — Alt text auto-derived ('lab4 aks container') — confirm it reads sensibly.
+- [ ] docs/7-aws-lab7.md:220 — Alt text auto-derived ('aks layer7 service') — confirm it reads sensibly.
+- [ ] docs/7-aws-lab7.md:241 — Alt text auto-derived ('lab2 step8 services') — confirm it reads sensibly.
+- [ ] docs/7-aws-lab7.md:243 — Alt text auto-derived ('lab4 k8 mgmtzone filter') — confirm it reads sensibly.
+- [ ] docs/7-aws-lab7.md:245 — Alt text auto-derived ('lab4 k8 service filter') — confirm it reads sensibly.
+- [ ] docs/7-aws-lab7.md:248 — Alt text auto-derived ('lab4 k8 service view mod') — confirm it reads sensibly.
+- [ ] docs/7-aws-lab7.md:258 — Alt text auto-derived ('lab4 k8 service backflow') — confirm it reads sensibly.
+- [ ] docs/7-aws-lab7.md:267 — Alt text auto-derived ('lab2 step8 services') — confirm it reads sensibly.
+- [ ] docs/7-aws-lab7.md:269 — Alt text auto-derived ('lab4 k8 mgmtzone filter') — confirm it reads sensibly.
+- [ ] docs/7-aws-lab7.md:271 — Alt text auto-derived ('lab4 k8 frontendservice filter') — confirm it reads sensibly.
+- [ ] docs/7-aws-lab7.md:273 — Alt text auto-derived ('lab4 serviceflow') — confirm it reads sensibly.
+- [ ] docs/7-aws-lab7.md:281 — Alt text auto-derived ('lab4 serviceflow responsetime') — confirm it reads sensibly.
+- [ ] docs/7-aws-lab7.md:288 — Alt text auto-derived ('lab4 serviceflow thoroughput') — confirm it reads sensibly.
+- [ ] docs/7-aws-lab7.md:307 — Alt text auto-derived ('lab2 picture future') — confirm it reads sensibly.
+- [ ] docs/8-aws-lab8-k8-events.md:10 — Alt text auto-derived ('boom events') — confirm it reads sensibly.
+- [ ] docs/8-aws-lab8-k8-events.md:23 — Alt text auto-derived ('boom7') — confirm it reads sensibly.
+- [ ] docs/8-aws-lab8-k8-events.md:35 — Alt text auto-derived ('boom8') — confirm it reads sensibly.
+- [ ] docs/8-aws-lab8-k8-events.md:47 — Alt text auto-derived ('Boom1') — confirm it reads sensibly.
+- [ ] docs/8-aws-lab8-k8-events.md:51 — Alt text auto-derived ('boom2') — confirm it reads sensibly.
+- [ ] docs/8-aws-lab8-k8-events.md:55 — Alt text auto-derived ('boom3') — confirm it reads sensibly.
+- [ ] docs/9-aws-lab9-davis-k8.md:25 — Alt text auto-derived ('lab3 order problem usecase') — confirm it reads sensibly.
+- [ ] docs/9-aws-lab9-davis-k8.md:37 — Alt text auto-derived ('lab3 pipeline') — confirm it reads sensibly.
+- [ ] docs/9-aws-lab9-davis-k8.md:50 — Alt text auto-derived ('lab3 problemcard events') — confirm it reads sensibly.
+- [ ] docs/9-aws-lab9-davis-k8.md:56 — Alt text auto-derived ('lab3 event examples') — confirm it reads sensibly.
+- [ ] docs/9-aws-lab9-davis-k8.md:68 — Alt text auto-derived ('lab3 tags') — confirm it reads sensibly.
+- [ ] docs/9-aws-lab9-davis-k8.md:129 — Alt text auto-derived ('lab3 order problem usecase') — confirm it reads sensibly.
+- [ ] docs/9-aws-lab9-davis-k8.md:155 — Alt text auto-derived ('lab3 app ui order version 3') — confirm it reads sensibly.
+- [ ] docs/9-aws-lab9-davis-k8.md:162 — Alt text auto-derived ('lab3 release order') — confirm it reads sensibly.
+- [ ] docs/9-aws-lab9-davis-k8.md:166 — Alt text auto-derived ('lab1 mz filter off') — confirm it reads sensibly.
+- [ ] docs/9-aws-lab9-davis-k8.md:170 — Alt text auto-derived ('lab3 release order event') — confirm it reads sensibly.
+- [ ] docs/9-aws-lab9-davis-k8.md:181 — Alt text auto-derived ('lab3 order problem') — confirm it reads sensibly.
+- [ ] docs/9-aws-lab9-davis-k8.md:189 — Alt text auto-derived ('lab3 order problem detail') — confirm it reads sensibly.
+- [ ] docs/9-aws-lab9-davis-k8.md:195 — Alt text auto-derived ('K8viewrequests') — confirm it reads sensibly.
+- [ ] docs/9-aws-lab9-davis-k8.md:199 — Alt text auto-derived ('K8Failure') — confirm it reads sensibly.
+- [ ] docs/9-aws-lab9-davis-k8.md:203 — Alt text auto-derived ('K8FailureRate') — confirm it reads sensibly.
+- [ ] docs/10-aws-lab10-appsec.md:32 — Alt text auto-derived ('1 1 enable appsec 1') — confirm it reads sensibly.
+- [ ] docs/10-aws-lab10-appsec.md:41 — Alt text auto-derived ('1 2 enable appsec 2') — confirm it reads sensibly.
+- [ ] docs/10-aws-lab10-appsec.md:66 — Alt text auto-derived ('2 2 vulnerabilities') — confirm it reads sensibly.
+- [ ] docs/10-aws-lab10-appsec.md:93 — Alt text auto-derived ('2 2 filter') — confirm it reads sensibly.
+- [ ] docs/10-aws-lab10-appsec.md:94 — Alt text auto-derived ('2 3 result') — confirm it reads sensibly.
+- [ ] docs/10-aws-lab10-appsec.md:96 — Alt text auto-derived ('2 3 detail') — confirm it reads sensibly.
+- [ ] docs/10-aws-lab10-appsec.md:100 — Alt text auto-derived ('2 3 detail 2') — confirm it reads sensibly.
+- [ ] docs/10-aws-lab10-appsec.md:101 — Alt text auto-derived ('2 5 click view all') — confirm it reads sensibly.
+- [ ] docs/10-aws-lab10-appsec.md:102 — Alt text auto-derived ('2 6 remediation tracking') — confirm it reads sensibly.
+- [ ] docs/10-aws-lab10-appsec.md:103 — Alt text auto-derived ('2 7 pg details') — confirm it reads sensibly.
+- [ ] docs/10-aws-lab10-appsec.md:123 — Alt text auto-derived ('4 1 alerting profile') — confirm it reads sensibly.
+- [ ] docs/11-aws-lab11-serverless.md:57 — Alt text auto-derived ('19 Lambda 1') — confirm it reads sensibly.
+- [ ] docs/11-aws-lab11-serverless.md:62 — Alt text auto-derived ('serverlesswebsite') — confirm it reads sensibly.
+- [ ] docs/11-aws-lab11-serverless.md:65 — Alt text auto-derived ('serverlesscronjob') — confirm it reads sensibly.
+- [ ] docs/11-aws-lab11-serverless.md:68 — Alt text auto-derived ('serverlessevents') — confirm it reads sensibly.
+- [ ] docs/11-aws-lab11-serverless.md:71 — Alt text auto-derived ('serverlessfile') — confirm it reads sensibly.
+- [ ] docs/11-aws-lab11-serverless.md:74 — Alt text auto-derived ('serverlesswebhook') — confirm it reads sensibly.
+- [ ] docs/11-aws-lab11-serverless.md:80 — Alt text auto-derived ('lab2 picture future') — confirm it reads sensibly.
+- [ ] docs/11-aws-lab11-serverless.md:108 — Alt text auto-derived ('lambdaAssests2') — confirm it reads sensibly.
+- [ ] docs/11-aws-lab11-serverless.md:120 — Alt text auto-derived ('lambdaDeploy') — confirm it reads sensibly.
+- [ ] docs/11-aws-lab11-serverless.md:154 — Alt text auto-derived ('CWLambdas1') — confirm it reads sensibly.
+- [ ] docs/11-aws-lab11-serverless.md:169 — Alt text auto-derived ('catalog service serverless') — confirm it reads sensibly.
+- [ ] docs/11-aws-lab11-serverless.md:179 — Alt text auto-derived ('catalogDeploy') — confirm it reads sensibly.
+- [ ] docs/12-aws-lab12-serverless-observability.md:8 — Alt text auto-derived ('lambdaServices') — confirm it reads sensibly.
+- [ ] docs/12-aws-lab12-serverless-observability.md:12 — Alt text auto-derived ('deployLambda') — confirm it reads sensibly.
+- [ ] docs/12-aws-lab12-serverless-observability.md:19 — Alt text auto-derived ('deployLambdaSettings') — confirm it reads sensibly.
+- [ ] docs/12-aws-lab12-serverless-observability.md:30 — Alt text auto-derived ('awsLambdaVar') — confirm it reads sensibly.
+- [ ] docs/12-aws-lab12-serverless-observability.md:35 — Alt text auto-derived ('cwLambdaLink') — confirm it reads sensibly.
+- [ ] docs/12-aws-lab12-serverless-observability.md:44 — Alt text auto-derived ('serviceFlow') — confirm it reads sensibly.
+- [ ] docs/12-aws-lab12-serverless-observability.md:48 — Alt text auto-derived ('frontendServiceFlow') — confirm it reads sensibly.
+- [ ] docs/12-aws-lab12-serverless-observability.md:55 — Alt text auto-derived ('catalogdServiceFlow') — confirm it reads sensibly.
+- [ ] docs/12-aws-lab12-serverless-observability.md:62 — Alt text auto-derived ('filter') — confirm it reads sensibly.
+- [ ] docs/12-aws-lab12-serverless-observability.md:66 — Alt text auto-derived ('feDistributedTracing') — confirm it reads sensibly.
+- [ ] docs/12-aws-lab12-serverless-observability.md:70 — Alt text auto-derived ('catalogDTracing') — confirm it reads sensibly.
+- [ ] docs/12-aws-lab12-serverless-observability.md:74 — Alt text auto-derived ('trace') — confirm it reads sensibly.
+- [ ] docs/12-aws-lab12-serverless-observability.md:85 — Alt text auto-derived ('lambdaDT') — confirm it reads sensibly.
+- [ ] docs/12-aws-lab12-serverless-observability.md:93 — Alt text auto-derived ('otelDT') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:36 — Alt text auto-derived ('setup dt trial') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:77 — Alt text auto-derived ('iam 1 create user') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:80 — Alt text auto-derived ('iam 2 attach policy') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:83 — Alt text auto-derived ('iam 3 create user') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:86 — Alt text auto-derived ('iam 4 save url') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:98 — Alt text auto-derived ('setup cloud shell icon') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:102 — Alt text auto-derived ('lab2 cloudshell splash page') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:106 — Alt text auto-derived ('setup cloud shell') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:139 — Alt text auto-derived ('dt access token') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:151 — Alt text auto-derived ('dt token slo') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:159 — Alt text auto-derived ('dt token config') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:167 — Alt text auto-derived ('dt token problem') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:175 — Alt text auto-derived ('dt token paas') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:179 — Alt text auto-derived ('dt tokens page save') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:299 — Alt text auto-derived ('aws save keypair') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:303 — Alt text auto-derived ('aws keypair list') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:362 — Alt text auto-derived ('aws cf menu') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:370 — Alt text auto-derived ('aws cf create mono') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:382 — Alt text auto-derived ('aws stack inputs') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:395 — Alt text auto-derived ('aws cf complete') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:457 — Alt text auto-derived ('aws cf menu') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:465 — Alt text auto-derived ('aws cf create services') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:479 — Alt text auto-derived ('aws stack inputs') — confirm it reads sensibly.
+- [ ] docs/14-aws-selfpaced.md:492 — Alt text auto-derived ('aws cf complete') — confirm it reads sensibly.
+
+## 5. Judgment calls (does this lab still belong?)  (14 items)
+- [ ] docs/1-aws-better-together.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/2-aws-lab1.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/3-aws-lab3.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/4-aws-lab4-role.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/5-aws-lab5-davis-mono.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/6-aws-lab6.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/7-aws-lab7.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/8-aws-lab8-k8-events.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/9-aws-lab9-davis-k8.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/10-aws-lab10-appsec.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/11-aws-lab11-serverless.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/12-aws-lab12-serverless-observability.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/13-aws-lab-cleanup.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/14-aws-selfpaced.md — Confirm this lab still belongs in the migrated workshop.
+
+## 6. Definition of done
+- [ ] All boxes above checked
+- [ ] `mkdocs build --strict` still clean
+- [ ] repos.yaml snippet reviewed (see REVIEW-repos-snippet.yaml) — **do NOT register until the owner lifts the branch-only hold**
+- [ ] Work committed to a branch (no PR to main at this time)

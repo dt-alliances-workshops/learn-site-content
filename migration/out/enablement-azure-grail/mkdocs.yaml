@@ -1,0 +1,16 @@
+INHERIT: mkdocs-base.yaml
+
+site_name: "Dynatrace Enablement Lab: Azure Grail"
+repo_name: "View Code on GitHub"
+repo_url: "https://github.com/dynatrace-wwse/enablement-azure-grail"
+nav:
+  - "Welcome": index.md
+  - "1. Azure Grail Workshop Lab 0 - Setup": 1-azure-grail-lab0.md
+  - "2. Azure Grail Workshop Lab 1 - OneAgent Observability": 2-azure-grail-lab1.md
+  - "3. Azure Grail Workshop Lab 2 - Modernization with AKS": 3-azure-grail-lab2.md
+  - "4. Azure Grail Workshop Lab 3 - Azure Monitor": 4-azure-grail-lab3.md
+  - "5. Azure Grail Workshop Lab 4 - Dashboards & Notebooks": 5-azure-grail-lab4.md
+  - "6. Azure Grail Workshop Lab 5 - SRE Guardian and Workflow": 6-azure-grail-lab5.md
+
+extra:
+  rum_snippet: ""  # TODO: paste this repo's Dynatrace RUM snippet before go-live

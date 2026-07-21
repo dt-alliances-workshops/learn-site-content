@@ -1,0 +1,9 @@
+  - name: enablement-aws-selfpaced
+    repo: dynatrace-wwse/enablement-aws-selfpaced
+    status: active
+    maintainer: "@TODO"
+    description: "TODO one-line description"
+    tags: [aws]
+    title: "AWS Self-paced"
+    primary_tag: aws
+    duration: "3h"

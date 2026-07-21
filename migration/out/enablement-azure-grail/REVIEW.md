@@ -1,0 +1,240 @@
+# Migration Review — enablement-azure-grail
+
+Auto-generated. Check boxes as you resolve. The repo already passed `mkdocs build --strict` at generation.
+
+## 0. Context (read once)
+- Labs: 6  |  Total duration in source: 198 min
+- Authors carried over: Jay Gurbani
+- Environment model: DOCS-FIRST (no cloud provisioning; prose references the learner's own cloud account).
+- Lab → page map:
+    - azure-grail-lab0 → docs/1-azure-grail-lab0.md (id: azure-grail-lab0, 28 images)
+    - azure-grail-lab1 → docs/2-azure-grail-lab1.md (id: azure-grail-lab1, 40 images)
+    - azure-grail-lab2 → docs/3-azure-grail-lab2.md (id: azure-grail-lab2, 37 images)
+    - azure-grail-lab3 → docs/4-azure-grail-lab3.md (id: azure-grail-lab3, 25 images)
+    - azure-grail-lab4 → docs/5-azure-grail-lab4.md (id: azure-grail-lab4, 11 images)
+    - azure-grail-lab5 → docs/6-azure-grail-lab5.md (id: azure-grail-lab5, 9 images)
+
+## 1. Blocking — must resolve before committing the branch  (33 items)
+- [ ] docs/1-azure-grail-lab0.md:94 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/1-azure-grail-lab0.md:358 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/1-azure-grail-lab0.md:421 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/1-azure-grail-lab0.md — Stale Feedback Link (https://github.com/dt-alliances-workshops/workshops-content) — replace with the repo feedback link.
+- [ ] docs/2-azure-grail-lab1.md:22 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-grail-lab1.md:36 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-grail-lab1.md:124 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-grail-lab1.md:133 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-grail-lab1.md:158 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-grail-lab1.md:217 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-grail-lab1.md:193 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-grail-lab1.md:251 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-grail-lab1.md:325 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-grail-lab1.md:341 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-grail-lab1.md:362 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-grail-lab1.md:396 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/3-azure-grail-lab2.md:49 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/3-azure-grail-lab2.md:90 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/3-azure-grail-lab2.md:194 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/3-azure-grail-lab2.md:210 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/3-azure-grail-lab2.md:251 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/3-azure-grail-lab2.md:445 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/3-azure-grail-lab2.md:506 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/3-azure-grail-lab2.md:57 — Stale internal CLaaT link (points at the discarded /codelabs/ site) — repoint to the migrated lab page.
+- [ ] docs/3-azure-grail-lab2.md:60 — Stale internal CLaaT link (points at the discarded /codelabs/ site) — repoint to the migrated lab page.
+- [ ] docs/3-azure-grail-lab2.md:114 — Stale internal CLaaT link (points at the discarded /codelabs/ site) — repoint to the migrated lab page.
+- [ ] docs/3-azure-grail-lab2.md — Stale Feedback Link (https://github.com/dt-alliances-workshops/workshops-content) — replace with the repo feedback link.
+- [ ] docs/4-azure-grail-lab3.md:72 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/4-azure-grail-lab3.md — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/4-azure-grail-lab3.md — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/4-azure-grail-lab3.md:82 — Malformed markdown link (destination starts with a stray '[') — fix the link syntax.
+- [ ] docs/5-azure-grail-lab4.md — Stale Feedback Link (https://github.com/dt-alliances-workshops/workshops-content) — replace with the repo feedback link.
+- [ ] docs/6-azure-grail-lab5.md — Stale Feedback Link (https://github.com/dt-alliances-workshops/workshops-content) — replace with the repo feedback link.
+
+## 2. Environment (cloud-account prose) — confirm docs-first wording  (4 items)
+- [ ] docs/1-azure-grail-lab0.md — References a cloud account/portal ('azure portal'); confirm docs-first wording (learner uses their own account).
+- [ ] docs/2-azure-grail-lab1.md — References a cloud account/portal ('azure portal'); confirm docs-first wording (learner uses their own account).
+- [ ] docs/3-azure-grail-lab2.md — References a cloud account/portal ('azure portal'); confirm docs-first wording (learner uses their own account).
+- [ ] docs/4-azure-grail-lab3.md — References a cloud account/portal ('azure portal'); confirm docs-first wording (learner uses their own account).
+
+## 3. Run & re-capture (validates technical accuracy)  (6 items)
+- [ ] docs/1-azure-grail-lab0.md — Run this lab and verify its 28 screenshots are current (technical-accuracy gate).
+- [ ] docs/2-azure-grail-lab1.md — Run this lab and verify its 40 screenshots are current (technical-accuracy gate).
+- [ ] docs/3-azure-grail-lab2.md — Run this lab and verify its 37 screenshots are current (technical-accuracy gate).
+- [ ] docs/4-azure-grail-lab3.md — Run this lab and verify its 25 screenshots are current (technical-accuracy gate).
+- [ ] docs/5-azure-grail-lab4.md — Run this lab and verify its 11 screenshots are current (technical-accuracy gate).
+- [ ] docs/6-azure-grail-lab5.md — Run this lab and verify its 9 screenshots are current (technical-accuracy gate).
+
+## 4. Alt-text review (batch-approvable)  (160 items)
+- [ ] docs/1-azure-grail-lab0.md:26 — Alt text auto-derived ('setup azure') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:28 — Alt text auto-derived ('azure pass signin') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:32 — Alt text auto-derived ('setup ms account') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:35 — Alt text auto-derived ('azure pass emailconfirm') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:53 — Alt text auto-derived ('az marketplace') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:55 — Alt text auto-derived ('ands') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:57 — Alt text auto-derived ('ands subscribe') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:59 — Alt text auto-derived ('ands create') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:66 — Alt text auto-derived ('ands create basics 1') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:68 — Alt text auto-derived ('Lab0 Step4 ands validate') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:70 — Alt text auto-derived ('ands create complete') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:79 — Alt text auto-derived ('setup azure shell open') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:84 — Alt text auto-derived ('setup azure shell bash') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:90 — Alt text auto-derived ('setup azure shell storage') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:97 — Alt text auto-derived ('setup azure shell prompt') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:100 — Alt text auto-derived ('setup azure shell newtab') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:167 — Alt text auto-derived ('pre requisites azure cli gitcloneoutput') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:187 — Alt text auto-derived ('Lab0 Step4 ands search') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:189 — Alt text auto-derived ('Lab0 Step5 ands gotodt') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:199 — Alt text auto-derived ('lab0 newUI access banner') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:201 — Alt text auto-derived ('lab0 newUI try latest dt') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:204 — Alt text auto-derived ('lab0 newUI main') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:215 — Alt text auto-derived ('dt access token') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:227 — Alt text auto-derived ('dt tokens page save') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:371 — Alt text auto-derived ('pre requisites azure portal resources') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:374 — Alt text auto-derived ('pre requisites azure portal resources resourcelist') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:429 — Alt text auto-derived ('setup k8') — confirm it reads sensibly.
+- [ ] docs/1-azure-grail-lab0.md:433 — Alt text auto-derived ('setup k8 node') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:19 — Alt text auto-derived ('lab1 setup') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:49 — Alt text auto-derived ('lab1 dynatrace hub') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:52 — Alt text auto-derived ('lab1 deploy dynatrace') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:54 — Alt text auto-derived ('lab1 download dynatrace') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:60 — Alt text auto-derived ('lab1 install dynatrace') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:75 — Alt text auto-derived ('lab1 deployment status') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:88 — Alt text auto-derived ('lab1 azure find vm') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:90 — Alt text auto-derived ('lab1 azure get public ip') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:93 — Alt text auto-derived ('lab1 app') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:117 — Alt text auto-derived ('lab1 infraops main') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:119 — Alt text auto-derived ('lab1 infraops hosts') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:142 — Alt text auto-derived ('lab1 hostlist') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:148 — Alt text auto-derived ('lab1 host view upd') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:149 — Alt text auto-derived ('lab1 host view proc') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:162 — Alt text auto-derived ('lab1 smartscape') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:181 — Alt text auto-derived ('lab1 host smartscape') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:202 — Alt text auto-derived ('lab1 host view proc') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:212 — Alt text auto-derived ('lab1 process view') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:225 — Alt text auto-derived ('lab1 docker monitoring') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:237 — Alt text auto-derived ('lab1 pick service') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:242 — Alt text auto-derived ('lab1 service view') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:257 — Alt text auto-derived ('lab1 apps services') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:260 — Alt text auto-derived ('lab1 pick monolith mz') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:263 — Alt text auto-derived ('lab1 trans services') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:267 — Alt text auto-derived ('lab1 top web requests') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:269 — Alt text auto-derived ('lab1 dynamic requests chart') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:271 — Alt text auto-derived ('lab1 top web request list') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:273 — Alt text auto-derived ('lab1 resp time filter') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:292 — Alt text auto-derived ('lab1 navigate to frontend upd') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:294 — Alt text auto-derived ('lab1 service flow arrow upd') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:300 — Alt text auto-derived ('lab1 service flow') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:309 — Alt text auto-derived ('lab1 service flow tp') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:333 — Alt text auto-derived ('lab1 trans services db') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:335 — Alt text auto-derived ('lab1 service backtrace arrow upd') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:343 — Alt text auto-derived ('lab1 service backtrace arrows') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:372 — Alt text auto-derived ('lab1 pick db upd') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:380 — Alt text auto-derived ('lab1 database upd') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:393 — Alt text auto-derived ('lab1 technology demo') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:404 — Alt text auto-derived ('lab1 technology') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:406 — Alt text auto-derived ('lab1 mz filter off') — confirm it reads sensibly.
+- [ ] docs/2-azure-grail-lab1.md:408 — Alt text auto-derived ('lab1 technology filter') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:28 — Alt text auto-derived ('lab4 app architecture') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:32 — Alt text auto-derived ('lab2 setup') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:52 — Alt text auto-derived ('lab4 app architecture future') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:73 — Alt text auto-derived ('lab2 aks search') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:78 — Alt text auto-derived ('lab2 aks dt extension install1') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:81 — Alt text auto-derived ('lab2 aks dt extension install2') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:86 — Alt text auto-derived ('lab2 aks dt extension install3') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:101 — Alt text auto-derived ('lab2 aks dt extension install4') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:106 — Alt text auto-derived ('lab2 aks dt extension install5') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:129 — Alt text auto-derived ('lab4 operator menu') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:135 — Alt text auto-derived ('lab4 operator mod may2022') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:290 — Alt text auto-derived ('lab2 k8s namespaces') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:325 — Alt text auto-derived ('lab4 app ip') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:357 — Alt text auto-derived ('lab2 k8classic app') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:359 — Alt text auto-derived ('lab2 k8classic cluster view') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:361 — Alt text auto-derived ('lab2 k8classic cluster view eventslogs') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:363 — Alt text auto-derived ('lab2 k8classic events config') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:365 — Alt text auto-derived ('lab2 k8classic events config breadcrumb') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:367 — Alt text auto-derived ('lab2 k8classic cluster view eventslogs') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:369 — Alt text auto-derived ('lab2 k8classic logingest') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:392 — Alt text auto-derived ('lab2 k8s layers upd') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:398 — Alt text auto-derived ('lab2 aks nodeutiliz') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:402 — Alt text auto-derived ('lab2 aks namespace upd') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:406 — Alt text auto-derived ('lab2 aks staging filter') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:410 — Alt text auto-derived ('la2 aks kubeworkload') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:413 — Alt text auto-derived ('lab2 aks frontend workload') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:417 — Alt text auto-derived ('lab2 aks pod') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:425 — Alt text auto-derived ('lab2 aks container') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:431 — Alt text auto-derived ('aks layer7 service upd') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:452 — Alt text auto-derived ('lab2 step8 services') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:454 — Alt text auto-derived ('lab4 k8 mgmtzone filter') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:456 — Alt text auto-derived ('lab4 k8 service filter') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:459 — Alt text auto-derived ('lab2 k8 service view mod') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:469 — Alt text auto-derived ('lab4 k8 service backflow') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:478 — Alt text auto-derived ('lab2 step8 services') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:480 — Alt text auto-derived ('lab4 k8 mgmtzone filter') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:482 — Alt text auto-derived ('lab4 k8 frontendservice filter') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:484 — Alt text auto-derived ('lab2 serviceflow') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:492 — Alt text auto-derived ('lab4 serviceflow responsetime') — confirm it reads sensibly.
+- [ ] docs/3-azure-grail-lab2.md:499 — Alt text auto-derived ('lab4 serviceflow thoroughput') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:25 — Alt text auto-derived ('lab4 setup') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:26 — Alt text auto-derived ('lab3 ands metrics') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:40 — Alt text auto-derived ('lab4 azure dashboard') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:54 — Alt text auto-derived ('lab4 host list') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:64 — Alt text auto-derived ('lab4 host detail') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:93 — Alt text auto-derived ('lab3 cloudapps allservices') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:98 — Alt text auto-derived ('lab3 cloudapps k8') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:100 — Alt text auto-derived ('lab3 cloudapps allservices filters') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:116 — Alt text auto-derived ('lab4 alert create upd') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:121 — Alt text auto-derived ('lab4 vm alert upd') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:127 — Alt text auto-derived ('lab4 dimentions key') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:129 — Alt text auto-derived ('lab4 adddimensionfilter') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:131 — Alt text auto-derived ('lab4 monotoringstrategy') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:133 — Alt text auto-derived ('lab4 advancedmodelproperties') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:138 — Alt text auto-derived ('lab4 keydimensionofentity') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:142 — Alt text auto-derived ('lab4 resource alert eventtemplate') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:145 — Alt text auto-derived ('lab4 custom alert list upd') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:153 — Alt text auto-derived ('lab4 monolith vm search') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:156 — Alt text auto-derived ('lab4 monolith vm runcmd') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:163 — Alt text auto-derived ('lab4 monolith vm exec runcmd') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:167 — Alt text auto-derived ('lab4 monolith vm runcmd output') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:176 — Alt text auto-derived ('lab4 cpu upd') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:183 — Alt text auto-derived ('lab4 custom alert problems upd') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:195 — Alt text auto-derived ('lab4 cpu upd') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:199 — Alt text auto-derived ('lab4 custom alert problems upd') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:224 — Alt text auto-derived ('lab4 monolith vm search') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:233 — Alt text auto-derived ('lab4 monolith vm runcmd stop') — confirm it reads sensibly.
+- [ ] docs/4-azure-grail-lab3.md:237 — Alt text auto-derived ('lab4 monolith vm runcmd stop output') — confirm it reads sensibly.
+- [ ] docs/5-azure-grail-lab4.md:23 — Alt text auto-derived ('lab4 dashboards1') — confirm it reads sensibly.
+- [ ] docs/5-azure-grail-lab4.md:33 — Alt text auto-derived ('dashboards app getting started') — confirm it reads sensibly.
+- [ ] docs/5-azure-grail-lab4.md:53 — Alt text auto-derived ('lab4 notebooks1') — confirm it reads sensibly.
+- [ ] docs/5-azure-grail-lab4.md:57 — Alt text auto-derived ('lab4 notebooks2') — confirm it reads sensibly.
+- [ ] docs/5-azure-grail-lab4.md:62 — Alt text auto-derived ('lab1 use filters to refine your query') — confirm it reads sensibly.
+- [ ] docs/5-azure-grail-lab4.md:66 — Alt text auto-derived ('lab4 notebooks3') — confirm it reads sensibly.
+- [ ] docs/5-azure-grail-lab4.md:78 — Alt text auto-derived ('lab1 visualize data in different ways') — confirm it reads sensibly.
+- [ ] docs/5-azure-grail-lab4.md:84 — Alt text auto-derived ('lab1 add code') — confirm it reads sensibly.
+- [ ] docs/5-azure-grail-lab4.md:92 — Alt text auto-derived ('lab4 notebooks saveas') — confirm it reads sensibly.
+- [ ] docs/5-azure-grail-lab4.md:96 — Alt text auto-derived ('lab3 grail notebooks') — confirm it reads sensibly.
+- [ ] docs/5-azure-grail-lab4.md:98 — Alt text auto-derived ('lab3 grail notebooks expand') — confirm it reads sensibly.
+- [ ] docs/5-azure-grail-lab4.md:107 — Alt text auto-derived ('lab4 notebooks saveas') — confirm it reads sensibly.
+- [ ] docs/5-azure-grail-lab4.md:110 — Alt text auto-derived ('lab3 grail notebooks') — confirm it reads sensibly.
+- [ ] docs/5-azure-grail-lab4.md:112 — Alt text auto-derived ('lab3 grail notebooks expand') — confirm it reads sensibly.
+- [ ] docs/6-azure-grail-lab5.md:11 — Alt text auto-derived ('lab5 srg 1') — confirm it reads sensibly.
+- [ ] docs/6-azure-grail-lab5.md:20 — Alt text auto-derived ('lab5 Workflows 1') — confirm it reads sensibly.
+- [ ] docs/6-azure-grail-lab5.md:23 — Alt text auto-derived ('lab5 Workflows 2') — confirm it reads sensibly.
+- [ ] docs/6-azure-grail-lab5.md:37 — Alt text auto-derived ('lab5 Workflows 4') — confirm it reads sensibly.
+- [ ] docs/6-azure-grail-lab5.md:57 — Alt text auto-derived ('lab5 sreguardian create') — confirm it reads sensibly.
+- [ ] docs/6-azure-grail-lab5.md:79 — Alt text auto-derived ('lab5 Workflows task1') — confirm it reads sensibly.
+- [ ] docs/6-azure-grail-lab5.md:81 — Alt text auto-derived ('lab5 Workflows task2') — confirm it reads sensibly.
+- [ ] docs/6-azure-grail-lab5.md:85 — Alt text auto-derived ('lab5 Workflows task4') — confirm it reads sensibly.
+- [ ] docs/6-azure-grail-lab5.md:87 — Alt text auto-derived ('lab5 Workflows task5') — confirm it reads sensibly.
+
+## 5. Judgment calls (does this lab still belong?)  (6 items)
+- [ ] docs/1-azure-grail-lab0.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/2-azure-grail-lab1.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/3-azure-grail-lab2.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/4-azure-grail-lab3.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/5-azure-grail-lab4.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/6-azure-grail-lab5.md — Confirm this lab still belongs in the migrated workshop.
+
+## 6. Definition of done
+- [ ] All boxes above checked
+- [ ] `mkdocs build --strict` still clean
+- [ ] repos.yaml snippet reviewed (see REVIEW-repos-snippet.yaml) — **do NOT register until the owner lifts the branch-only hold**
+- [ ] Work committed to a branch (no PR to main at this time)

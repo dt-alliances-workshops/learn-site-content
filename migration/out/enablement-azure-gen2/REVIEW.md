@@ -1,0 +1,259 @@
+# Migration Review — enablement-azure-gen2
+
+Auto-generated. Check boxes as you resolve. The repo already passed `mkdocs build --strict` at generation.
+
+## 0. Context (read once)
+- Labs: 11  |  Total duration in source: 272 min
+- Authors carried over: Jay Gurbani
+- Environment model: DOCS-FIRST (no cloud provisioning; prose references the learner's own cloud account).
+- Lab → page map:
+    - azure-lab0-prereq → docs/1-azure-lab0-prereq.md (id: azure-lab0, 18 images)
+    - azure-lab1 → docs/2-azure-lab1.md (id: azure-lab1, 37 images)
+    - azure-lab2 → docs/3-azure-lab2.md (id: azure-lab2, 25 images)
+    - azure-lab3 → docs/4-azure-lab3.md (id: azure-lab3, 19 images)
+    - azure-lab4 → docs/5-azure-lab4.md (id: azure-lab4, 21 images)
+    - azure-lab5 → docs/6-azure-lab5.md (id: azure-lab5, 9 images)
+    - azure-lab6-appsec → docs/7-azure-lab6-appsec.md (id: azure-lab6, 12 images)
+    - azure-lab7 → docs/8-azure-lab7.md (id: azure-lab7, 13 images)
+    - azure-lab8-cleanup → docs/9-azure-lab8-cleanup.md (id: azure-lab8, 0 images)
+    - azure-lab11-setips → docs/10-azure-lab11-setips.md (id: azure-lab11, 1 images)
+    - azure-lab-intro → docs/11-azure-lab-intro.md (id: azure-intro, 2 images)
+
+## 1. Blocking — must resolve before committing the branch  (33 items)
+- [ ] docs/1-azure-lab0-prereq.md:88 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-lab1.md:22 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-lab1.md:34 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-lab1.md:109 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-lab1.md:134 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-lab1.md:169 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-lab1.md:193 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-lab1.md:227 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-lab1.md:257 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-lab1.md:295 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-lab1.md:311 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-lab1.md:332 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/2-azure-lab1.md:366 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/3-azure-lab2.md:53 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/3-azure-lab2.md:141 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/3-azure-lab2.md:157 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/3-azure-lab2.md:198 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/3-azure-lab2.md:368 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/3-azure-lab2.md:429 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/3-azure-lab2.md:62 — Stale internal CLaaT link (points at the discarded /codelabs/ site) — repoint to the migrated lab page.
+- [ ] docs/4-azure-lab3.md:45 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/4-azure-lab3.md:193 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/5-azure-lab4.md:70 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/5-azure-lab4.md — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/6-azure-lab5.md:38 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/7-azure-lab6-appsec.md:35 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/7-azure-lab6-appsec.md:73 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/7-azure-lab6-appsec.md — Stale Feedback Link (mailto:jay.gurbani@dynatrace.com) — replace with the repo feedback link.
+- [ ] docs/8-azure-lab7.md:12 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/9-azure-lab8-cleanup.md — Stale Feedback Link (mailto:jay.gurbani@dynatrace.com) — replace with the repo feedback link.
+- [ ] docs/10-azure-lab11-setips.md:92 — Auto-converted aside with images/multiple paragraphs; verify admonition body renders correctly.
+- [ ] docs/10-azure-lab11-setips.md — Stale Feedback Link (mailto:jay.gurbani@dynatrace.com) — replace with the repo feedback link.
+- [ ] docs/11-azure-lab-intro.md — Stale Feedback Link (https://github.com/dt-alliances-workshops/workshops-content) — replace with the repo feedback link.
+
+## 2. Environment (cloud-account prose) — confirm docs-first wording  (7 items)
+- [ ] docs/1-azure-lab0-prereq.md — References a cloud account/portal ('azure portal'); confirm docs-first wording (learner uses their own account).
+- [ ] docs/2-azure-lab1.md — References a cloud account/portal ('azure portal'); confirm docs-first wording (learner uses their own account).
+- [ ] docs/5-azure-lab4.md — References a cloud account/portal ('azure portal'); confirm docs-first wording (learner uses their own account).
+- [ ] docs/8-azure-lab7.md — References a cloud account/portal ('subscription'); confirm docs-first wording (learner uses their own account).
+- [ ] docs/9-azure-lab8-cleanup.md — References a cloud account/portal ('subscription'); confirm docs-first wording (learner uses their own account).
+- [ ] docs/10-azure-lab11-setips.md — References a cloud account/portal ('azure portal'); confirm docs-first wording (learner uses their own account).
+- [ ] docs/11-azure-lab-intro.md — References a cloud account/portal ('azure pass'); confirm docs-first wording (learner uses their own account).
+
+## 3. Run & re-capture (validates technical accuracy)  (11 items)
+- [ ] docs/1-azure-lab0-prereq.md — Run this lab and verify its 18 screenshots are current (technical-accuracy gate).
+- [ ] docs/2-azure-lab1.md — Run this lab and verify its 37 screenshots are current (technical-accuracy gate).
+- [ ] docs/3-azure-lab2.md — Run this lab and verify its 25 screenshots are current (technical-accuracy gate).
+- [ ] docs/4-azure-lab3.md — Run this lab and verify its 19 screenshots are current (technical-accuracy gate).
+- [ ] docs/5-azure-lab4.md — Run this lab and verify its 21 screenshots are current (technical-accuracy gate).
+- [ ] docs/6-azure-lab5.md — Run this lab and verify its 9 screenshots are current (technical-accuracy gate).
+- [ ] docs/7-azure-lab6-appsec.md — Run this lab and verify its 12 screenshots are current (technical-accuracy gate).
+- [ ] docs/8-azure-lab7.md — Run this lab and verify its 13 screenshots are current (technical-accuracy gate).
+- [ ] docs/9-azure-lab8-cleanup.md — Run this lab and verify its 0 screenshots are current (technical-accuracy gate).
+- [ ] docs/10-azure-lab11-setips.md — Run this lab and verify its 1 screenshots are current (technical-accuracy gate).
+- [ ] docs/11-azure-lab-intro.md — Run this lab and verify its 2 screenshots are current (technical-accuracy gate).
+
+## 4. Alt-text review (batch-approvable)  (161 items)
+- [ ] docs/1-azure-lab0-prereq.md:23 — Alt text auto-derived ('pre requisites dt managed') — confirm it reads sensibly.
+- [ ] docs/1-azure-lab0-prereq.md:49 — Alt text auto-derived ('setup azure') — confirm it reads sensibly.
+- [ ] docs/1-azure-lab0-prereq.md:51 — Alt text auto-derived ('azure pass signin') — confirm it reads sensibly.
+- [ ] docs/1-azure-lab0-prereq.md:55 — Alt text auto-derived ('setup ms account') — confirm it reads sensibly.
+- [ ] docs/1-azure-lab0-prereq.md:58 — Alt text auto-derived ('azure pass emailconfirm') — confirm it reads sensibly.
+- [ ] docs/1-azure-lab0-prereq.md:73 — Alt text auto-derived ('setup azure shell open') — confirm it reads sensibly.
+- [ ] docs/1-azure-lab0-prereq.md:78 — Alt text auto-derived ('setup azure shell bash') — confirm it reads sensibly.
+- [ ] docs/1-azure-lab0-prereq.md:84 — Alt text auto-derived ('setup azure shell storage') — confirm it reads sensibly.
+- [ ] docs/1-azure-lab0-prereq.md:91 — Alt text auto-derived ('setup azure shell prompt') — confirm it reads sensibly.
+- [ ] docs/1-azure-lab0-prereq.md:94 — Alt text auto-derived ('setup azure shell newtab') — confirm it reads sensibly.
+- [ ] docs/1-azure-lab0-prereq.md:161 — Alt text auto-derived ('pre requisites azure cli gitcloneoutput') — confirm it reads sensibly.
+- [ ] docs/1-azure-lab0-prereq.md:200 — Alt text auto-derived ('dt provision dashboard list') — confirm it reads sensibly.
+- [ ] docs/1-azure-lab0-prereq.md:202 — Alt text auto-derived ('dt provision dashboard edit') — confirm it reads sensibly.
+- [ ] docs/1-azure-lab0-prereq.md:204 — Alt text auto-derived ('dt copy command 1') — confirm it reads sensibly.
+- [ ] docs/1-azure-lab0-prereq.md:243 — Alt text auto-derived ('pre requisites azure portal resources') — confirm it reads sensibly.
+- [ ] docs/1-azure-lab0-prereq.md:246 — Alt text auto-derived ('pre requisites azure portal resources resourcelist') — confirm it reads sensibly.
+- [ ] docs/1-azure-lab0-prereq.md:295 — Alt text auto-derived ('setup k8') — confirm it reads sensibly.
+- [ ] docs/1-azure-lab0-prereq.md:299 — Alt text auto-derived ('setup k8 node') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:19 — Alt text auto-derived ('lab1 setup') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:47 — Alt text auto-derived ('lab1 dynatrace hub') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:50 — Alt text auto-derived ('lab1 deploy dynatrace') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:52 — Alt text auto-derived ('lab1 download dynatrace') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:58 — Alt text auto-derived ('lab1 install dynatrace') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:73 — Alt text auto-derived ('lab1 deployment status') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:86 — Alt text auto-derived ('lab1 azure find vm') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:88 — Alt text auto-derived ('lab1 azure get public ip') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:91 — Alt text auto-derived ('lab1 app') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:118 — Alt text auto-derived ('lab1 hostlist') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:124 — Alt text auto-derived ('lab1 host view upd') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:125 — Alt text auto-derived ('lab1 host view proc') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:138 — Alt text auto-derived ('lab1 smartscape') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:157 — Alt text auto-derived ('lab1 host smartscape') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:178 — Alt text auto-derived ('lab1 host view proc') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:188 — Alt text auto-derived ('lab1 process view') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:201 — Alt text auto-derived ('lab1 docker monitoring') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:213 — Alt text auto-derived ('lab1 pick service') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:218 — Alt text auto-derived ('lab1 service view') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:234 — Alt text auto-derived ('lab1 pick monolith mz') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:236 — Alt text auto-derived ('lab1 trans services') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:239 — Alt text auto-derived ('lab1 top web requests') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:241 — Alt text auto-derived ('lab1 dynamic requests chart') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:243 — Alt text auto-derived ('lab1 top web request list') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:245 — Alt text auto-derived ('lab1 resp time filter') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:264 — Alt text auto-derived ('lab1 navigate to frontend upd') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:266 — Alt text auto-derived ('lab1 service flow arrow upd') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:272 — Alt text auto-derived ('lab1 service flow') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:281 — Alt text auto-derived ('lab1 service flow tp') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:303 — Alt text auto-derived ('lab1 trans services db') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:305 — Alt text auto-derived ('lab1 service backtrace arrow upd') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:313 — Alt text auto-derived ('lab1 service backtrace arrows') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:342 — Alt text auto-derived ('lab1 pick db upd') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:350 — Alt text auto-derived ('lab1 database upd') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:363 — Alt text auto-derived ('lab1 technology demo') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:374 — Alt text auto-derived ('lab1 technology') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:376 — Alt text auto-derived ('lab1 mz filter off') — confirm it reads sensibly.
+- [ ] docs/2-azure-lab1.md:378 — Alt text auto-derived ('lab1 technology filter') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:26 — Alt text auto-derived ('lab4 app architecture') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:30 — Alt text auto-derived ('lab2 setup') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:56 — Alt text auto-derived ('lab4 app architecture future') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:77 — Alt text auto-derived ('lab4 operator menu') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:83 — Alt text auto-derived ('lab4 operator mod may2022') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:237 — Alt text auto-derived ('lab2 k8s namespaces') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:272 — Alt text auto-derived ('lab4 app ip') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:315 — Alt text auto-derived ('lab2 k8s layers upd') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:321 — Alt text auto-derived ('lab2 aks nodeutiliz') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:325 — Alt text auto-derived ('lab2 aks namespace upd') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:329 — Alt text auto-derived ('lab2 aks staging filter') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:333 — Alt text auto-derived ('la2 aks kubeworkload') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:336 — Alt text auto-derived ('lab2 aks frontend workload') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:340 — Alt text auto-derived ('lab2 aks pod') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:348 — Alt text auto-derived ('lab2 aks container') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:354 — Alt text auto-derived ('aks layer7 service upd') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:375 — Alt text auto-derived ('lab2 step8 services') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:377 — Alt text auto-derived ('lab4 k8 mgmtzone filter') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:379 — Alt text auto-derived ('lab4 k8 service filter') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:382 — Alt text auto-derived ('lab2 k8 service view mod') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:392 — Alt text auto-derived ('lab4 k8 service backflow') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:401 — Alt text auto-derived ('lab2 step8 services') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:403 — Alt text auto-derived ('lab4 k8 mgmtzone filter') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:405 — Alt text auto-derived ('lab4 k8 frontendservice filter') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:407 — Alt text auto-derived ('lab2 serviceflow') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:415 — Alt text auto-derived ('lab4 serviceflow responsetime') — confirm it reads sensibly.
+- [ ] docs/3-azure-lab2.md:422 — Alt text auto-derived ('lab4 serviceflow thoroughput') — confirm it reads sensibly.
+- [ ] docs/4-azure-lab3.md:27 — Alt text auto-derived ('lab3 pipeline') — confirm it reads sensibly.
+- [ ] docs/4-azure-lab3.md:38 — Alt text auto-derived ('lab3 problemcard events') — confirm it reads sensibly.
+- [ ] docs/4-azure-lab3.md:42 — Alt text auto-derived ('lab3 event examples') — confirm it reads sensibly.
+- [ ] docs/4-azure-lab3.md:56 — Alt text auto-derived ('lab3 tags') — confirm it reads sensibly.
+- [ ] docs/4-azure-lab3.md:138 — Alt text auto-derived ('lab3 app backend version 2') — confirm it reads sensibly.
+- [ ] docs/4-azure-lab3.md:145 — Alt text auto-derived ('lab3 backend problem') — confirm it reads sensibly.
+- [ ] docs/4-azure-lab3.md:150 — Alt text auto-derived ('lab3 backend analysis upd') — confirm it reads sensibly.
+- [ ] docs/4-azure-lab3.md:154 — Alt text auto-derived ('lab3 backend hotspots upd') — confirm it reads sensibly.
+- [ ] docs/4-azure-lab3.md:164 — Alt text auto-derived ('lab3 backend analysis trace') — confirm it reads sensibly.
+- [ ] docs/4-azure-lab3.md:168 — Alt text auto-derived ('lab3 backend breadcrumb') — confirm it reads sensibly.
+- [ ] docs/4-azure-lab3.md:171 — Alt text auto-derived ('lab3 backend problem details upd') — confirm it reads sensibly.
+- [ ] docs/4-azure-lab3.md:198 — Alt text auto-derived ('lab3 global anomoly rules') — confirm it reads sensibly.
+- [ ] docs/4-azure-lab3.md:229 — Alt text auto-derived ('lab3 release order') — confirm it reads sensibly.
+- [ ] docs/4-azure-lab3.md:233 — Alt text auto-derived ('lab3 release order event') — confirm it reads sensibly.
+- [ ] docs/4-azure-lab3.md:238 — Alt text auto-derived ('lab3 app ui order version 3') — confirm it reads sensibly.
+- [ ] docs/4-azure-lab3.md:246 — Alt text auto-derived ('lab3 order problem') — confirm it reads sensibly.
+- [ ] docs/4-azure-lab3.md:252 — Alt text auto-derived ('lab3 order problem detail') — confirm it reads sensibly.
+- [ ] docs/4-azure-lab3.md:257 — Alt text auto-derived ('lab3 order menu') — confirm it reads sensibly.
+- [ ] docs/4-azure-lab3.md:261 — Alt text auto-derived ('lab3 order problem requests upd') — confirm it reads sensibly.
+- [ ] docs/5-azure-lab4.md:22 — Alt text auto-derived ('lab4 setup') — confirm it reads sensibly.
+- [ ] docs/5-azure-lab4.md:38 — Alt text auto-derived ('lab4 azure dashboard') — confirm it reads sensibly.
+- [ ] docs/5-azure-lab4.md:52 — Alt text auto-derived ('lab4 host list') — confirm it reads sensibly.
+- [ ] docs/5-azure-lab4.md:62 — Alt text auto-derived ('lab4 host detail') — confirm it reads sensibly.
+- [ ] docs/5-azure-lab4.md:90 — Alt text auto-derived ('lab4 alert create upd') — confirm it reads sensibly.
+- [ ] docs/5-azure-lab4.md:95 — Alt text auto-derived ('lab4 vm alert upd') — confirm it reads sensibly.
+- [ ] docs/5-azure-lab4.md:101 — Alt text auto-derived ('lab4 dimentions key') — confirm it reads sensibly.
+- [ ] docs/5-azure-lab4.md:103 — Alt text auto-derived ('lab4 adddimensionfilter') — confirm it reads sensibly.
+- [ ] docs/5-azure-lab4.md:105 — Alt text auto-derived ('lab4 monotoringstrategy') — confirm it reads sensibly.
+- [ ] docs/5-azure-lab4.md:107 — Alt text auto-derived ('lab4 advancedmodelproperties') — confirm it reads sensibly.
+- [ ] docs/5-azure-lab4.md:112 — Alt text auto-derived ('lab4 keydimensionofentity') — confirm it reads sensibly.
+- [ ] docs/5-azure-lab4.md:116 — Alt text auto-derived ('lab4 resource alert eventtemplate') — confirm it reads sensibly.
+- [ ] docs/5-azure-lab4.md:119 — Alt text auto-derived ('lab4 custom alert list upd') — confirm it reads sensibly.
+- [ ] docs/5-azure-lab4.md:127 — Alt text auto-derived ('lab4 monolith vm search') — confirm it reads sensibly.
+- [ ] docs/5-azure-lab4.md:130 — Alt text auto-derived ('lab4 monolith vm runcmd') — confirm it reads sensibly.
+- [ ] docs/5-azure-lab4.md:137 — Alt text auto-derived ('lab4 monolith vm exec runcmd') — confirm it reads sensibly.
+- [ ] docs/5-azure-lab4.md:141 — Alt text auto-derived ('lab4 monolith vm runcmd output') — confirm it reads sensibly.
+- [ ] docs/5-azure-lab4.md:147 — Alt text auto-derived ('lab4 cpu upd') — confirm it reads sensibly.
+- [ ] docs/5-azure-lab4.md:151 — Alt text auto-derived ('lab4 custom alert problems upd') — confirm it reads sensibly.
+- [ ] docs/5-azure-lab4.md:176 — Alt text auto-derived ('lab4 monolith vm search') — confirm it reads sensibly.
+- [ ] docs/5-azure-lab4.md:185 — Alt text auto-derived ('lab4 monolith vm runcmd stop') — confirm it reads sensibly.
+- [ ] docs/5-azure-lab4.md:189 — Alt text auto-derived ('lab4 monolith vm runcmd stop output') — confirm it reads sensibly.
+- [ ] docs/6-azure-lab5.md:27 — Alt text auto-derived ('lab4 slo dashboard') — confirm it reads sensibly.
+- [ ] docs/6-azure-lab5.md:35 — Alt text auto-derived ('lab4 slo list') — confirm it reads sensibly.
+- [ ] docs/6-azure-lab5.md:58 — Alt text auto-derived ('lab4 dashboard') — confirm it reads sensibly.
+- [ ] docs/6-azure-lab5.md:63 — Alt text auto-derived ('lab4 dashboard settings upd') — confirm it reads sensibly.
+- [ ] docs/6-azure-lab5.md:71 — Alt text auto-derived ('lab4 dashboard json') — confirm it reads sensibly.
+- [ ] docs/6-azure-lab5.md:75 — Alt text auto-derived ('lab4 save dashboard') — confirm it reads sensibly.
+- [ ] docs/6-azure-lab5.md:79 — Alt text auto-derived ('lab4 dashboard bread') — confirm it reads sensibly.
+- [ ] docs/6-azure-lab5.md:83 — Alt text auto-derived ('lab4 dashboard view') — confirm it reads sensibly.
+- [ ] docs/6-azure-lab5.md:92 — Alt text auto-derived ('lab4 dashboard edit tile') — confirm it reads sensibly.
+- [ ] docs/7-azure-lab6-appsec.md:30 — Alt text auto-derived ('1 1 enable appsec 1') — confirm it reads sensibly.
+- [ ] docs/7-azure-lab6-appsec.md:39 — Alt text auto-derived ('1 2 enable appsec 2') — confirm it reads sensibly.
+- [ ] docs/7-azure-lab6-appsec.md:50 — Alt text auto-derived ('2 1 vulnerabilities') — confirm it reads sensibly.
+- [ ] docs/7-azure-lab6-appsec.md:77 — Alt text auto-derived ('2 2 filter') — confirm it reads sensibly.
+- [ ] docs/7-azure-lab6-appsec.md:78 — Alt text auto-derived ('2 3 result') — confirm it reads sensibly.
+- [ ] docs/7-azure-lab6-appsec.md:80 — Alt text auto-derived ('2 4 detail') — confirm it reads sensibly.
+- [ ] docs/7-azure-lab6-appsec.md:83 — Alt text auto-derived ('2 5 detail 2') — confirm it reads sensibly.
+- [ ] docs/7-azure-lab6-appsec.md:86 — Alt text auto-derived ('2 6 click view pg') — confirm it reads sensibly.
+- [ ] docs/7-azure-lab6-appsec.md:88 — Alt text auto-derived ('2 7 pg details') — confirm it reads sensibly.
+- [ ] docs/7-azure-lab6-appsec.md:94 — Alt text auto-derived ('2 5 click view all') — confirm it reads sensibly.
+- [ ] docs/7-azure-lab6-appsec.md:117 — Alt text auto-derived ('4 1 alerting profile') — confirm it reads sensibly.
+- [ ] docs/7-azure-lab6-appsec.md:130 — Alt text auto-derived ('4 2 notification') — confirm it reads sensibly.
+- [ ] docs/8-azure-lab7.md:30 — Alt text auto-derived ('lab5 picture') — confirm it reads sensibly.
+- [ ] docs/8-azure-lab7.md:36 — Alt text auto-derived ('lab5 picture future') — confirm it reads sensibly.
+- [ ] docs/8-azure-lab7.md:46 — Alt text auto-derived ('lab5 setup') — confirm it reads sensibly.
+- [ ] docs/8-azure-lab7.md:77 — Alt text auto-derived ('lab5 azure find vm') — confirm it reads sensibly.
+- [ ] docs/8-azure-lab7.md:81 — Alt text auto-derived ('lab5 azure get public ip') — confirm it reads sensibly.
+- [ ] docs/8-azure-lab7.md:88 — Alt text auto-derived ('lab5 app') — confirm it reads sensibly.
+- [ ] docs/8-azure-lab7.md:95 — Alt text auto-derived ('lab5 trans services') — confirm it reads sensibly.
+- [ ] docs/8-azure-lab7.md:103 — Alt text auto-derived ('lab5 service flow arrow') — confirm it reads sensibly.
+- [ ] docs/8-azure-lab7.md:115 — Alt text auto-derived ('lab5 service flow') — confirm it reads sensibly.
+- [ ] docs/8-azure-lab7.md:123 — Alt text auto-derived ('lab5 service flow tp') — confirm it reads sensibly.
+- [ ] docs/8-azure-lab7.md:138 — Alt text auto-derived ('lab5 service list catalog') — confirm it reads sensibly.
+- [ ] docs/8-azure-lab7.md:142 — Alt text auto-derived ('lab5 service backtrace arrow') — confirm it reads sensibly.
+- [ ] docs/8-azure-lab7.md:151 — Alt text auto-derived ('lab5 backtrace detail') — confirm it reads sensibly.
+- [ ] docs/10-azure-lab11-setips.md:87 — Alt text auto-derived ('akserror') — confirm it reads sensibly.
+- [ ] docs/11-azure-lab-intro.md:3 — Alt text auto-derived ('dt azure') — confirm it reads sensibly.
+- [ ] docs/11-azure-lab-intro.md:158 — Alt text auto-derived ('azure cloud adoption') — confirm it reads sensibly.
+
+## 5. Judgment calls (does this lab still belong?)  (11 items)
+- [ ] docs/1-azure-lab0-prereq.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/2-azure-lab1.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/3-azure-lab2.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/4-azure-lab3.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/5-azure-lab4.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/6-azure-lab5.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/7-azure-lab6-appsec.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/8-azure-lab7.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/9-azure-lab8-cleanup.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/10-azure-lab11-setips.md — Confirm this lab still belongs in the migrated workshop.
+- [ ] docs/11-azure-lab-intro.md — Confirm this lab still belongs in the migrated workshop.
+
+## 6. Definition of done
+- [ ] All boxes above checked
+- [ ] `mkdocs build --strict` still clean
+- [ ] repos.yaml snippet reviewed (see REVIEW-repos-snippet.yaml) — **do NOT register until the owner lifts the branch-only hold**
+- [ ] Work committed to a branch (no PR to main at this time)

@@ -1,0 +1,9 @@
+  - name: enablement-azure-aks-levelup
+    repo: dynatrace-wwse/enablement-azure-aks-levelup
+    status: active
+    maintainer: "@TODO"
+    description: "TODO one-line description"
+    tags: [azure, aks, kubernetes]
+    title: "Azure AKS LevelUp"
+    primary_tag: azure
+    duration: "1.5h"

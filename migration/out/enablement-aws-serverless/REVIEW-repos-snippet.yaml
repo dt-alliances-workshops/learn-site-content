@@ -1,0 +1,9 @@
+  - name: enablement-aws-serverless
+    repo: dynatrace-wwse/enablement-aws-serverless
+    status: active
+    maintainer: "@TODO"
+    description: "TODO one-line description"
+    tags: [aws, serverless]
+    title: "AWS Serverless Observability"
+    primary_tag: aws
+    duration: "1.5h"

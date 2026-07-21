@@ -11,16 +11,11 @@ main, register in the framework `repos.yaml`, or publish until the owner lifts t
     python3 -m pip install -r migration/requirements.txt
 
 ## Run a family (example: Azure Grail)
-    # 1. filtered source view (labs must be direct children of the family dir)
-    mkdir -p migration/out/_grail-src
-    for d in workshop-markdown/azure-grail-lab*; do ln -s "$(pwd)/$d" "migration/out/_grail-src/$(basename "$d")"; done
-
-    # 2. scaffold -> convert -> review
+    # 2. scaffold -> convert (by registry workshop name) -> review
     python3 -m migration.scaffold migration/out/enablement-azure-grail \
       --site-name "Dynatrace Enablement Lab: Azure Grail" \
       --repo-url "https://github.com/dynatrace-wwse/enablement-azure-grail"
-    python3 -m migration.convert migration/out/_grail-src migration/out/enablement-azure-grail \
-      --strip-prefix "azure-grail-"
+    python3 -m migration.convert --workshop azure-grail --out migration/out/enablement-azure-grail
     python3 -m migration.review migration/out/enablement-azure-grail \
       --title "Azure Grail" --tags "azure,grail,kubernetes" --duration "2h"
 

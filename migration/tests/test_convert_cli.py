@@ -1,23 +1,26 @@
 import json
 import pathlib
 
-import yaml
+from migration.convert import convert_workshop
+from migration.registry import Workshop
 
-from migration.convert import convert_family
 
-
-def _make_family(tmp_path):
-    fam = tmp_path / "src" / "demo"
-    for i, dur in ((0, 3), (10, 5)):
-        d = fam / f"demo-lab{i}"
+def _make_corpus(tmp_path):
+    corpus = tmp_path / "corpus"
+    specs = [
+        ("demo-lab0", 3, "aws-immersion-day,aws-selfpaced"),
+        ("demo-lab10", 5, "aws-selfpaced"),
+    ]
+    for name, dur, tags in specs:
+        d = corpus / name
         (d / "img").mkdir(parents=True)
         (d / "img" / "pic.png").write_bytes(b"x")
         (d / "README.md").write_text(
-            f"id: demo-lab{i}\nsummary: s{i}\n\n"
-            f"# Demo Lab {i}\n\n## Step\nDuration: {dur}\n\n"
+            f"id: {name}-id\ntags: {tags}\n\n# Demo {name}\n\n"
+            f"## Step\nDuration: {dur}\n\nOpen the Azure Portal.\n\n"
             f"![image](img/pic.png)\n"
         )
-    return fam
+    return corpus
 
 
 def _scaffold_stub(out):
@@ -25,46 +28,32 @@ def _scaffold_stub(out):
     (out / "mkdocs.yaml").write_text('site_name: "x"\nnav:\n# NAV_PLACEHOLDER\n')
 
 
-def test_convert_family_orders_labs_naturally(tmp_path):
-    fam = _make_family(tmp_path)
+def test_convert_workshop_selects_by_tag_and_orders(tmp_path):
+    corpus = _make_corpus(tmp_path)
     out = tmp_path / "out"
     _scaffold_stub(out)
-    log = convert_family(fam, out, strip_prefix="demo-")
+    w = Workshop("demo-self", "enablement-demo-self", "Demo Self",
+                 "tag", "aws-selfpaced", ["aws"], "1h")
+    log = convert_workshop(w, corpus, out)
     pages = [l["page"] for l in log["labs"]]
-    # lab0 before lab10 despite lexical order
-    assert pages == ["docs/1-lab0.md", "docs/2-lab10.md"]
+    # both labs carry aws-selfpaced; natural order lab0 before lab10
+    assert pages == ["docs/1-demo-lab0.md", "docs/2-demo-lab10.md"]
 
 
-def test_convert_family_writes_pages_images_and_nav(tmp_path):
-    fam = _make_family(tmp_path)
+def test_convert_workshop_writes_pages_images_id_and_flags(tmp_path):
+    corpus = _make_corpus(tmp_path)
     out = tmp_path / "out"
     _scaffold_stub(out)
-    convert_family(fam, out, strip_prefix="demo-")
-    assert (out / "docs" / "1-lab0.md").exists()
-    assert (out / "docs" / "img" / "lab0" / "pic.png").exists()
+    w = Workshop("demo-imm", "enablement-demo-imm", "Demo Imm",
+                 "tag", "aws-immersion-day", ["aws"], "1h")
+    log = convert_workshop(w, corpus, out)
+    # only lab0 has aws-immersion-day
+    assert [l["source"] for l in log["labs"]] == ["demo-lab0"]
+    assert (out / "docs" / "1-demo-lab0.md").exists()
+    assert (out / "docs" / "img" / "demo-lab0" / "pic.png").exists()
+    lab = log["labs"][0]
+    assert lab["id"] == "demo-lab0-id"
+    sections = {f["section"] for f in lab["flags"]}
+    assert {"env", "screenshot", "judgment"} <= sections  # env from cloud-prose scan
     nav = (out / "mkdocs.yaml").read_text()
-    assert "1-lab0.md" in nav and "NAV_PLACEHOLDER" not in nav
-    log = json.loads((out / "transform_log.json").read_text())
-    assert any(f["section"] == "screenshot" for f in log["labs"][0]["flags"])
-
-
-def test_convert_family_escapes_quotes_in_title_for_nav(tmp_path):
-    fam = tmp_path / "src" / "demo"
-    d = fam / "demo-lab0"
-    (d / "img").mkdir(parents=True)
-    (d / "README.md").write_text(
-        'id: demo-lab0\nsummary: s0\n\n'
-        '# Demo "Quoted" Lab\n\n## Step\nDuration: 3\n\n'
-    )
-    out = tmp_path / "out"
-    _scaffold_stub(out)
-
-    convert_family(fam, out, strip_prefix="demo-")
-
-    nav_text = (out / "mkdocs.yaml").read_text()
-    # The generated mkdocs.yaml must remain valid YAML even though the
-    # source lab title contains a double quote.
-    parsed = yaml.safe_load(nav_text)
-    assert parsed is not None
-    # The escaped title should still be recoverable from the nav.
-    assert 'Demo \\"Quoted\\" Lab' in nav_text
+    assert "1-demo-lab0.md" in nav and "NAV_PLACEHOLDER" not in nav

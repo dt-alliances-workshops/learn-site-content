@@ -26,13 +26,29 @@ class ConvertedDoc:
 
 def _resolve_lines(markdown: str, flags: list[Flag]) -> None:
     lines = markdown.splitlines()
+    # Per-locator search cursor: when several flags share the same locator
+    # text (common with repeated boilerplate like "How this helps"), each
+    # one must resolve to its own occurrence in document order rather than
+    # all collapsing onto the first match.
+    next_start: dict[str, int] = {}
     for f in flags:
         if not f.locator:
             continue
-        for idx, ln in enumerate(lines, start=1):
-            if f.locator in ln:
-                f.line = idx
+        start = next_start.get(f.locator, 0)
+        for idx in range(start, len(lines)):
+            if f.locator in lines[idx]:
+                f.line = idx + 1
+                next_start[f.locator] = idx + 1
                 break
+        else:
+            # No occurrence at or after the cursor (fewer real occurrences
+            # than flags, or locator only matches earlier in the file) —
+            # fall back to the first match anywhere so the flag still gets
+            # a usable pointer instead of being left unresolved.
+            for idx, ln in enumerate(lines):
+                if f.locator in ln:
+                    f.line = idx + 1
+                    break
 
 
 def convert_document(

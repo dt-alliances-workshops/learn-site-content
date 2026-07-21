@@ -1,6 +1,7 @@
 import pathlib
 
-from migration.claat.document import convert_document
+from migration.claat.document import _resolve_lines, convert_document
+from migration.claat.models import Flag
 
 FIXROOT = pathlib.Path(__file__).parent / "fixtures" / "sample_claat"
 
@@ -37,3 +38,27 @@ def test_flags_have_resolved_line_numbers():
     doc = convert_document(text, FIXROOT / "img", "lab0")
     # at least one flag resolved to a real (non-zero) line
     assert any(f.line > 0 for f in doc.flags)
+
+
+def test_resolve_lines_repeated_locator_resolves_to_distinct_lines():
+    # Real Grail content repeats an identical aside opener ("How this helps")
+    # many times in one doc. Each flag must resolve to its OWN occurrence,
+    # not collapse onto the first match found in the file.
+    markdown = "\n".join(
+        [
+            "line 1",
+            "    How this helps",  # line 2 — first occurrence
+            "line 3",
+            "line 4",
+            "    How this helps",  # line 5 — second occurrence
+            "line 6",
+            "    How this helps",  # line 7 — third occurrence
+        ]
+    )
+    flags = [
+        Flag(section="blocking", message="first", locator="How this helps"),
+        Flag(section="blocking", message="second", locator="How this helps"),
+        Flag(section="blocking", message="third", locator="How this helps"),
+    ]
+    _resolve_lines(markdown, flags)
+    assert [f.line for f in flags] == [2, 5, 7]

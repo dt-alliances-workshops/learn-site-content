@@ -48,7 +48,8 @@ def convert_family(
                       "Confirm this lab still belongs in the migrated workshop.",
                       "locator": "", "line": 0})
 
-        nav_lines.append(f'  - "{i}. {doc.title}": {page}')
+        safe_title = doc.title.replace("\\", "\\\\").replace('"', '\\"')
+        nav_lines.append(f'  - "{i}. {safe_title}": {page}')
         labs_log.append({
             "labslug": labslug, "source": name, "page": f"docs/{page}",
             "title": doc.title, "total_minutes": doc.total_minutes,

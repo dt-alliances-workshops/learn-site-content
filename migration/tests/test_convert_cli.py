@@ -1,6 +1,8 @@
 import json
 import pathlib
 
+import yaml
+
 from migration.convert import convert_family
 
 
@@ -44,3 +46,25 @@ def test_convert_family_writes_pages_images_and_nav(tmp_path):
     assert "1-lab0.md" in nav and "NAV_PLACEHOLDER" not in nav
     log = json.loads((out / "transform_log.json").read_text())
     assert any(f["section"] == "screenshot" for f in log["labs"][0]["flags"])
+
+
+def test_convert_family_escapes_quotes_in_title_for_nav(tmp_path):
+    fam = tmp_path / "src" / "demo"
+    d = fam / "demo-lab0"
+    (d / "img").mkdir(parents=True)
+    (d / "README.md").write_text(
+        'id: demo-lab0\nsummary: s0\n\n'
+        '# Demo "Quoted" Lab\n\n## Step\nDuration: 3\n\n'
+    )
+    out = tmp_path / "out"
+    _scaffold_stub(out)
+
+    convert_family(fam, out, strip_prefix="demo-")
+
+    nav_text = (out / "mkdocs.yaml").read_text()
+    # The generated mkdocs.yaml must remain valid YAML even though the
+    # source lab title contains a double quote.
+    parsed = yaml.safe_load(nav_text)
+    assert parsed is not None
+    # The escaped title should still be recoverable from the nav.
+    assert 'Demo \\"Quoted\\" Lab' in nav_text

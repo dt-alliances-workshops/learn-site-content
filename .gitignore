@@ -10,6 +10,10 @@ dist*/*
 
 local-notes/
 
+# Python bytecode
+__pycache__/
+*.pyc
+
 # SDD scratch (ledger, task briefs/reports) — never commit
 .superpowers/
 

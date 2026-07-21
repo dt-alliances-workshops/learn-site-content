@@ -8,4 +8,7 @@ codelabs-gen/
 build/
 dist*/*
 
-local-notes/
+local-notes/.superpowers/
+
+# CLaaT migration generated repos (branch-only artifacts, do not commit)
+migration/out/

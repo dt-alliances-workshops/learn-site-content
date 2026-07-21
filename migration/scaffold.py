@@ -3,8 +3,6 @@ import pathlib
 import shutil
 import sys
 
-_KEEP_DOCS_DIRS = {"overrides", "snippets", "requirements", "stylesheets", "img"}
-
 _MKDOCS_TEMPLATE = """INHERIT: mkdocs-base.yaml
 
 site_name: "{site_name}"

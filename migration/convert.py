@@ -3,7 +3,6 @@ import json
 import pathlib
 import shutil
 import sys
-from dataclasses import asdict
 
 from migration.claat.document import convert_document
 from migration.claat.slugify import natural_key, slug_text

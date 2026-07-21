@@ -8,7 +8,10 @@ codelabs-gen/
 build/
 dist*/*
 
-local-notes/.superpowers/
+local-notes/
+
+# SDD scratch (ledger, task briefs/reports) — never commit
+.superpowers/
 
 # CLaaT migration generated repos (branch-only artifacts, do not commit)
 migration/out/
